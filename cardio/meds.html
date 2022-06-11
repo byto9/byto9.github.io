@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de drogas vasoativas</title>
+	<script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../jquery-ui.js"></script>
+	<script type="text/javascript" src="../bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/calculoMeds.js"></script>
+	<script type="text/javascript">
+	$( function() {
+    	$( "#accordion" ).accordion();
+	} );</script>
+	<link href="../bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Cálculo de concentração/dose de medicamentos</h1>
+		<div id="accordion">
+			<h3>ml/h para mcg/kg/min</h3>
+			<div id="calc1">
+				<form>
+					<p>Vazão da infusão (ml/h): <input type="text" id="vazao"></p>
+					<p>Peso do paciente (kg): <input type="text" id="peso"></p>
+					<p>Concentração da solução (mg/ml): <input type="text" id="conc"></p>
+					<p><input type="submit" onclick="calculoDose(); return false;"></p>
+				</form>
+				<!--<p id="resultado"></p>-->
+
+			</div>
+			<h3>mcg/kg/min para ml/h</h3>
+			<div id="calc2">
+				<form>
+					<p>Dose (mcg/kg/min): <input type="text" id="dose"></p>
+					<p>Peso do paciente (kg): <input type="text" id="peso2"></p>
+					<p>Concentração da solução (mg/ml): <input type="text" id="conc2"></p>
+					<p><input type="submit" onclick="calculoVazao(); return false;"></p>
+				</form>
+				<!--<p id="resultado2"></p>-->
+				
+			</div>
+		</div>
+		<div id="about">
+			<p id="resultado"></p>
+					<table>
+						<tr>
+							<td colspan="2">Sobre a dobutamina</td>
+						</tr>
+						<tr>
+							<td>2.5 mcg/kg/min</td>
+							<td>Reduz RVS e pressão de enchimento do VD</td>
+						</tr>
+						<tr>
+							<td>5 a 7.5 mcg/kg/min</td>
+							<td>Mantém redução da RVS e pressões do VD voltam ao normal</td>
+						</tr>
+						<tr>
+							<td>10 a 15 mcg/kg/min</td>
+							<td>Aumento da FC, pode contribuir com aumento do índice<br>cardíaco com aumento do consumo de O<sub>2</sub> (cuidado!)</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					<table>
+						<tr>
+							<td colspan="2">Sobre a milrinona</td>
+						</tr>
+						<tr>
+							<td>0.375 a 0.750 mcg/kg/min</td>
+							<td>Dose de manutenção</td>
+						</tr>
+						<tr>
+							<td>1.13 mcg/kg/min</td>
+							<td>Dose máxima diária</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					<table>
+						<tr>
+							<td colspan="2">Sobre a noradrenalina</td>
+						</tr>
+						<tr>
+							<td>0.05 a 0.1 mcg/kg/min</td>
+							<td>Inicia-se a infusão nesta dose, aumentando-se progressivamente</td>
+						</tr>
+						<tr>
+							<td>2 a 15 mcg/kg/min</td>
+							<td>Provocam vasoconstricção periférica e aumento da resistência<br>arterial sistêmica</td>
+						</tr>
+					</table>
+		</div>
+
+</body>
+</html>

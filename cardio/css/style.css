@@ -1,0 +1,112 @@
+body {
+	background-image: url("../curso bootstrap/kawaii.png");
+	background-color: #ffd2df;
+	background-attachment: fixed;
+	font-family: "Roboto Mono", monospace;
+	text-shadow: 1px 1px #ffffff;
+	color: #555555;
+
+}
+
+a:link {
+	color: #d44c6b;
+}
+
+a:visited {
+	color: #e0007b;
+}
+
+a:hover {
+	background-image: url("file:///C:/Users/natal/OneDrive/Documents/MEGA/etc/nyaa.gif");
+}
+
+h1 {
+	font-family: Dancing Script;
+	color: #ff828f;
+}
+
+footer {
+	font-family: Dancing Script;
+	background-color: #ffd2df;
+	margin-top: 20px;
+}
+
+table {
+	background-color: white;
+	opacity: 0.85;
+	border-radius: 10px;
+	text-align: center;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #ff828f;
+}
+
+::selection {
+  color: white;
+  background: #ff828f;
+}
+
+#resultado2 {
+	font-weight: bold;
+}
+
+.row {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.column {
+	float: left;
+	width: 15%;
+	padding: 5px;
+}
+
+.mynav {
+	background-color: #ffd2df;
+}
+
+.navimg {
+	margin-left: 10px;
+}
+
+.pets {
+	background-color: #ffffff;
+	opacity: 0.85;
+}
+
+.margin {
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.petimg {
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 20px;
+}
+
+.cuteb {
+	font-family: Dancing Script;
+	font-size: 24px;
+	color: #ff828f;
+}
+
+#about {
+	padding-top: 500 px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

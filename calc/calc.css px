@@ -1,0 +1,131 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', monospace;
+	font-size: 20px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: linear-gradient(to bottom left, white, #ffe4f3, #e6cddb);	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	background-attachment: fixed;
+	color: #555555;
+}
+
+a:link {
+	color: #595758;
+}
+
+a:visited {
+	color: #555;
+}
+
+a:hover {
+	color: #ff92c2;
+}
+
+::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+::selection {
+  color: white;
+  background: transparent;
+}
+
+.calculator {
+			background-color: #595758;
+			padding: 17px;			
+			border-radius: 40px;
+			justify-content: center;
+			box-shadow: inset -8px -8px 16px #3f383c,
+            inset 8px 8px 16px #666465,
+            3px 3px 10px #de97c9;
+}
+
+.btn {			
+	font-family: 'Dosis', monospace;							
+	border-radius: 30px;			
+	font-size: 20px;			
+	margin: 5px;
+}		
+
+.btn:hover {
+	filter: brightness(150%)
+}
+
+.btn:active {
+	filter: brightness(60%);
+}
+
+.top {
+	background-color: #ff92c2;
+	color: #fff;
+	border: 1px solid #ffd8e5;
+	text-shadow: 1px 1px 2px #e0519a;
+	box-shadow: 3px 3px 10px #3f383c,
+							inset 3px 3px 5px #ffd8e5,
+							inset 7px 10px 12px #e0519a;
+}		
+
+.middle {
+	background-color: #ffc8fb;
+	color: #595758;
+	border: 1px solid #ffebfb;
+	text-shadow: 1px 1px 2px #d577d5;
+	box-shadow: 3px 3px 10px #3f383c,
+							inset 3px 3px 5px #ffebfb,
+							inset 7px 10px 12px #d577d5;
+}
+
+.numbers {
+	background-color: #ffeef2;
+	color: #595758;
+	border: 1px solid #fff;
+	text-shadow: 1px 1px 2px #ffbfd8;
+	box-shadow: 3px 3px 10px #3f383c,
+							inset 3px 3px 5px #fff,
+							inset 7px 10px 12px #ffbfd8;
+}
+
+.big {
+	width: 133px;
+	height: 60px;			
+}
+
+.small {
+	width: 60px;
+	height: 60px;
+}
+
+.result {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: 'Dosis', Roboto Mono, monospace;
+	background-color: #bbdec8;
+	border-radius: 30px;
+	text-shadow: 2px 2px 5px #8ea489;
+	color: #25464a;
+	text-align: center;
+	appearance: none;
+	border: none;
+	width: 295px;
+	height: 100px;
+	font-size: 50px;				
+	box-shadow: inset 5px 5px 10px #7a8777,
+							3px 3px 10px #666465,
+							-3px -3px 10px #3f383c;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+	

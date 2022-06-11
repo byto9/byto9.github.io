@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Pixel art</title>
+	<script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+	<link href="../bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class ="wrapper">
+		<div class="options">
+			<div class="opt-wrapper">
+				<div class="slider">
+					<label for="width-range">Grid Width</label>
+					<input type="range" id="width-range" min="1" max="40">
+					<span id="width-value">00</span>
+				</div>
+				<div class="slider">
+					<label for="height-range">Grid Height</label>
+					<input type="range" id="height-range" min="1" max="40">
+					<span id="height-value">00</span>
+				</div>
+			</div>
+			<div class="opt-wrapper">
+				<button id="submit-grid">Create Grid</button>
+				<button id="clear-grid">Clear Grid</button>
+				<input type="color" id="color-input">
+				<button id="erase-btn">Erase</button>
+				<button id="paint-btn">Paint</button>
+			</div>
+		</div>
+		<div class="container"></div>
+		<script type="text/javascript" src="pixel.js"></script>
+	</div>	
+</body>
+</html>

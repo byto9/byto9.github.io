@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>jQuery :3</title>
+		<meta charset="utf-8">
+	    <script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+	    <script type="text/javascript" src="../bootstrap.bundle.min.js"></script>
+	    <script type="text/javascript" src="main.js"></script>
+	    <link href="../bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	    <link href="style.css" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg bg-light mynav">
+			<a class="navbar-brand" href="#"><img src="../byto.png" width="32" height="32" class="navimg"></a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="../curso bootstrap/">Bootstrap</a></li>
+				<li class="nav-item"><a class="nav-link active" aria-current="page" href="../curso js/">js</a></li>
+				<li class="nav-item dropdown">
+         			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Cursos
+					</a>
+          			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item" href="../curso bootstrap/">Bootstrap</a></li>
+						<li><a class="dropdown-item" href="../curso js/">js</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">etc</a></li>
+        			</ul></li>
+	    		<li class="nav-item"><a class="nav-link active" aria-current="page" href="#lola">lola</a></li>
+	    		<li class="nav-item"><a class="nav-link active" aria-current="page" href="#bolota">bolota</a></li>
+	    		<li class="nav-item"><a class="nav-link active" aria-current="page" href="#rytos">lasanha</a></li>
+	    		<li class="nav-item"><a class="nav-link active" aria-current="page" href="#rytos">risotto</a></li>
+	    		<li class="nav-item"><a class="nav-link active" aria-current="page" href="#rytos">fedora</a></li>
+			</ul>
+				<span class="navbar-brand cuteb">Consulta CEP</span>
+			      <form class="d-flex" role="search">
+			        <input id="cep" class="form-control me-2" type="search" placeholder="Digite seu CEP" aria-label="Search">
+			        <button type="button" class="btn btn-outline-success" onclick="consultaCep()">Consultar</button>
+			      </form>
+
+			</div>
+		</nav>
+
+		<div class="progress barra">
+ 			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+ 		
+ 			</div>
+		</div>
+
+		<div class="container margin cepform">
+			<div class="row">
+				<h3 id="titulo_cep">Consulta de CEP</h3>
+			</div>
+			<div class="row">
+				<table class="table">
+				  <tbody>
+				    <tr>
+				      <td><b class="cuteb">Logradouro</b></td>
+				      <td><b class="cuteb">Bairro</b></td>
+				      <td><b class="cuteb">Complemento</b></td>
+				      <td><b class="cuteb">Localidade</b></td>
+				      <td><b class="cuteb">UF</b></td>
+				    </tr>
+				    <tr>
+				      <td id="logradouro"></td>
+				      <td id="bairro"></td>
+				      <td id="complemento"></td>
+				      <td id="localidade"></td>
+				      <td id="uf"></td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
