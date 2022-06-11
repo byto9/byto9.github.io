@@ -5,56 +5,6 @@
 	font-family: "Roboto Mono", monospace;
 }
 
-.wrapper {
-	background-color: white;
-	width: 80vmin;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-	padding: 40px 20px;
-	border-radius: 8px;
-}
-
-input[type="range"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background: #ffe2ef;
-	border-radius: 8px;
-	outline: none;
-	opacity: 0.7;
-	-webkit-transition: .2s;
-	transition: opacity .2s;
-}
-
-input[type="range"]:hover {
-	opacity: 1;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border-radius: 100%;
-	width: 25px;
-	height: 25px;
-	appearance: none;
-	background: #ff828f;
-	cursor: pointer;
-}
-
-input[type="range"]::-moz-range-thumb {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border-radius: 100%;
-	width: 25px;
-	height: 25px;
-	appearance: none;
-	background: #ff828f;
-	cursor: pointer;
-}
-
-
 label {
 	display: block;
 }
@@ -65,61 +15,14 @@ span {
 	bottom: -1px;
 }
 
-.opt-wrapper {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 20px;
-	gap:  10px;
-}
-
-button {
-	background-color: #ffd2df;
-	color: #555;
-	border: none;
-	border-radius: 5px;
-	padding: 5px;
-}
-
-input[type="color"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: transparent;
-	width: 70px;
-	height: 40px;
-	border: none;
-	cursor: pointer;
-}
-
-input[type="color"]::-webkit-color-swatch {
-	border-radius: 8px;
-	border: 1px solid #eee;
-}
-
-input[type="color"]::-moz-color-swatch {
-	border-radius: 8px;
-	border: 1px solid #eee;
-}
-
-.gridCol {
-	height: 1em;
-	width: 1em;
-	border: 1px dotted #eeeeee;
-}
-
-.gridRow {
-	display: flex;
-}
-
 html, body {
-	height: 100%;
+	
 }
 
 body {
 	background-image: url("big.png");
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	background-color: #ffd2df;
 	background-attachment: fixed;
@@ -138,7 +41,7 @@ a:visited {
 }
 
 a:hover {
-	background-image: url("nyaa.gif");
+	color:#e0007b;
 }
 
 h1 {
@@ -195,4 +98,5 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	justify-content: center;
 }
