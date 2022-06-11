@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Roboto Mono", monospace;
+	font-size: 1.5vh;
 }
 
 label {
@@ -11,8 +12,8 @@ label {
 
 span {
 	position: relative;
-	font-size: 22px;
-	bottom: -1px;
+	font-size: 1em;
+	bottom: -0.0625em;
 }
 
 html, body {
@@ -27,7 +28,7 @@ body {
 	background-color: #ffd2df;
 	background-attachment: fixed;
 	font-family: "Lora", serif;
-	text-shadow: 1px 1px #ffffff;
+	text-shadow: 0.0625em 0.0625em #ffffff;
 	color: #555555;
 
 }
@@ -52,14 +53,19 @@ h1 {
 footer {
 	font-family: Dancing Script;
 	background-color: #ffd2df;
-	margin-top: 20px;
+	margin-top: 1em;
 }
 
 table {
 	background-color: white;
 	opacity: 0.85;
-	border-radius: 10px;
+	border-radius: 0.625em;
 	text-align: center;
+}
+
+.navimg {
+	width: 2em;
+	height: 2em;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -75,14 +81,14 @@ table {
 body::-webkit-scrollbar-track {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	border-radius: 10px;
+	border-radius: 0.625em;
 	background-color: #cfeff3;
 }
 
 body::-webkit-scrollbar {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	width: 12px;
+	width: 0.75em;
 	background-color: #cfeff3;
 }
 
@@ -90,7 +96,7 @@ body::-webkit-scrollbar-thumb {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border-color: #ffffff;
-	border-radius: 17px;
+	border-radius: 1em;
 	background-color: #b2dfef;
 }
 
