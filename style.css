@@ -1,9 +1,9 @@
 * {
-	padding: 0;
-	margin: 0;
+	padding: 0em;
+	margin: 0em;
 	box-sizing: border-box;
 	font-family: "Roboto Mono", monospace;
-	font-size: 1.7vh;
+	font-size: 1.5vh;
 }
 
 body {
@@ -22,13 +22,13 @@ aside, main {
 
 main {
 	position: relative;
-	margin-left: calc(20% + 1em);
+	margin-left: 9em;
 	font-size: 3em;
 }
 
 aside {
 	background-color: #ffffffb3;
-	width: 20%;
+	width: 25em;
 	height: 100%;
 	display: inline-block;
 	justify-content: space-between;
