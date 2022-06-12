@@ -3,34 +3,47 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Roboto Mono", monospace;
-	font-size: 1.5vh;
-}
-
-label {
-	display: block;
-}
-
-span {
-	position: relative;
-	font-size: 1em;
-	bottom: -0.0625em;
-}
-
-html, body {
-	
+	font-size: 1.7vh;
 }
 
 body {
-	background-image: url("big.png");
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #ffd2df;
+	background-color: #ffd2df8a;
 	background-attachment: fixed;
 	font-family: "Lora", serif;
-	text-shadow: 0.0625em 0.0625em #ffffff;
-	color: #555555;
+	text-shadow: 0.0625em 0.0625em #fff;
+	color: #555;
 
+}
+
+aside, main {
+	display: inline-block;
+	vertical-align: top;
+}
+
+main {
+	position: relative;
+	margin-left: calc(20% + 1em);
+	font-size: 3em;
+}
+
+aside {
+	background-color: #ffffffb3;
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+}
+
+.wrapper {
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	filter: drop-shadow(0.5em 0.5em 1em #ff828f);
 }
 
 a:link {
@@ -46,35 +59,35 @@ a:hover {
 }
 
 h1 {
-	font-family: Dancing Script;
+	font-family: Parisienne;
 	color: #ff828f;
 }
 
 footer {
-	font-family: Dancing Script;
+	font-family: Parisienne;
 	background-color: #ffd2df;
 	margin-top: 1em;
 }
 
 table {
-	background-color: white;
+	background-color: #fff;
 	opacity: 0.85;
 	border-radius: 0.625em;
 	text-align: center;
 }
 
 .navimg {
-	width: 2em;
-	height: 2em;
+	width: 90%;
+	margin-left: 0.75em;
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: white;
+::-moz-selection {
+  color: #fff;
   background: #ff828f;
 }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: #ff828f;
 }
 
@@ -95,9 +108,17 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	border-color: #ffffff;
+	border-color: #fff;
 	border-radius: 1em;
 	background-color: #b2dfef;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 0.5em;
 }
 
 #time {

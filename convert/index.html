@@ -5,36 +5,37 @@
 	<title>Conversor de bases numéricas</title>
 	<link rel="icon" type="image/x-icon" href="../favicon.ico">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Dekko" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
 	<script type="text/javascript" src="../jquery-ui.js"></script>
 	<script type="text/javascript" src="convert.js"></script>	
 </head>
 <body>
-<div id="accordion">
-	<h1 class="h1style">Converter para decimal</h1>
-		<div>				
-			<form>
-				<p>Escolha a base numérica:</p>	
-				<input type="radio" id="bin1" value="2" name="base_a" class="radio"><label for="bin1"> Binário (base 2)</label><br>
-				<input type="radio" id="oct1" value="8" name="base_a" class="radio"><label for="oct1"> Octal (base 8)</label><br>
-				<input type="radio" id="hex1" value="16" name="base_a" class="radio"><label for="hex1"> Hexadecimal (base 16)</label><br>
-			</form>
-			<p align="center"><input type="text" id="num_to_dec" class="input" placeholder=""> <button onclick="numToDec()" class="btn">»</button> <input type="text" id="num_to_dec_result" class="input" placeholder="decimal" disabled="disabled"><br></p>
+	<main>
+		<div class="wrapper">
+			<h1 class="h1style">Converter para decimal</h1>
+				<div>				
+					<form>
+						<p>Escolha a base numérica:</p>	
+						<input type="radio" id="bin1" value="2" name="base_a" class="radio"><label for="bin1"> Binário (base 2)</label><br>
+						<input type="radio" id="oct1" value="8" name="base_a" class="radio"><label for="oct1"> Octal (base 8)</label><br>
+						<input type="radio" id="hex1" value="16" name="base_a" class="radio"><label for="hex1"> Hexadecimal (base 16)</label><br>
+					</form>
+					<p align="center"><input type="text" id="num_to_dec" class="input white" placeholder=""> <button onclick="numToDec()" class="btn">»</button> <input type="text" id="num_to_dec_result" class="input yellow" placeholder="decimal" disabled="disabled"><br></p>
+				</div>
+			<h1 class="h1style">Converter para outras bases</h1>
+				<div>
+					<form>
+						<p>Escolha a base numérica:</p>
+						<input type="radio" id="bin2" value="2" name="base_b" class="radio"><label for="bin2"> Binário (base 2)</label><br>
+						<input type="radio" id="oct2" value="8" name="base_b" class="radio"><label for="oct2"> Octal (base 8)</label><br>
+						<input type="radio" id="hex2" value="16" name="base_b" class="radio"><label for="hex2"> Hexadecimal (base 16)</label><br>
+					</form>
+					<p align="center"><input type="text" id="dec_to_num" class="input white" placeholder="decimal"> <button onclick="decToNum()" class="btn">»</button> <input type="text" id="dec_to_num_result" class="input yellow" placeholder="binário/octal/hexadecimal" disabled="disabled"><br></p>
+				</div>
 		</div>
-
-	<h1 class="h1style">Converter para outras bases</h1>
-		<div>
-			<form>
-				<p>Escolha a base numérica:</p>
-				<input type="radio" id="bin2" value="2" name="base_b" class="radio"><label for="bin2"> Binário (base 2)</label><br>
-				<input type="radio" id="oct2" value="8" name="base_b" class="radio"><label for="oct2"> Octal (base 8)</label><br>
-				<input type="radio" id="hex2" value="16" name="base_b" class="radio"><label for="hex2"> Hexadecimal (base 16)</label><br>
-			</form>
-			<p align="center"><input type="text" id="dec_to_num" class="input" placeholder="decimal"> <button onclick="decToNum()" class="btn">»</button> <input type="text" id="dec_to_num_result" class="input" placeholder="binário/octal/hexadecimal" disabled="disabled"><br></p>
-		</div>
-</div>
-
+	</main>
+			
 </body>
 <footer><a href="javascript:history.back()">« voltar</a></footer>
 </html>

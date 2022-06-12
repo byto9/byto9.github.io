@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Calcule seu IMC</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Dekko" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery-ui.js"></script>
+	<script type="text/javascript" src="calculoIMC.js"></script>	
+</head>
+<body>
+	<main>
+		<div class="wrapper">
+			<h1 class="h1style">Calcule seu IMC!</h1>
+<form>
+	<p>Digite sua idade: <input class="valor" type="text" id="idade" placeholder="30"></p>
+	<p>Digite sua altura em metros: <input class="valor" type="text" id="altura" placeholder="1.70"></p>
+	<p>Digite seu peso em kg: <input class="valor" type="text" id="peso" placeholder="60"></p>
+	<p><button class="btn" onclick="calculoIMC(); return false;">&nbsp;&nbsp;Calcular&nbsp;&nbsp;</button></p>
+	
+</form>
+
+<div>
+	<span class="resultados"><p style="" id="resultado1"></p><p style="" id="resultado2"></p><p id="resultado3"></p></span>
+
+	<div id="tabela_imc">
+				<table>
+					<tr>
+						<td colspan="2">Em adultos (até 64 anos)</td>
+					</tr>
+					<tr>
+						<td class="titulo"><b>IMC</b></td>
+						<td class="titulo"><b>Classificação</b></td>
+					</tr>
+					<tr>
+						<td>< 18.5</td>
+						<td>Baixo Peso</td>
+					</tr>
+					<tr>
+						<td>18.5 - 24.9</td>
+						<td>Peso Normal</td>
+					</tr>
+					<tr>
+						<td>25 - 29.9</td>
+						<td>Sobrepeso</td>
+					</tr>
+					<tr>
+						<td>30 - 34.9</td>
+						<td>Obesidade Grau I</td>
+					</tr>
+					<tr>
+						<td>35 - 39.9</td>
+						<td>Obesidade Grau II</td>
+					</tr>
+					<tr>
+						<td>>= 40</td>
+						<td>Obesidade Grau III</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<td colspan="2">Em idosos (65 anos ou mais)</td>
+					</tr>
+					<tr>
+						<td class="titulo"><b>IMC</b></td>
+						<td class="titulo"><b>Classificação</b></td>
+					</tr>
+					<tr>
+						<td>< 23</td>
+						<td>Baixo Peso</td>
+					</tr>
+					<tr>
+						<td>23 - 30</td>
+						<td>Peso Normal</td>
+					</tr>
+					<tr>
+						<td>> 30</td>
+						<td>Sobrepeso</td>
+					</tr>
+				</table>
+
+	</div>
+</div>
+		</div>
+	</main>
+			
+</body>
+<footer><a href="javascript:history.back()">« voltar</a></footer>
+</html>

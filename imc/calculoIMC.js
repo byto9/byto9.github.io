@@ -1,12 +1,12 @@
 //calculadora de IMC
 
 function calculoIMC(){
-	var i = document.getElementById("idade").value;
-	var a = document.getElementById("altura").value;
-	var p = document.getElementById("peso").value;
+	let i = document.getElementById("idade").value;
+	let a = document.getElementById("altura").value;
+	let p = document.getElementById("peso").value;
 
-	var imc = (p/(a**2)).toFixed(2);
-	document.getElementById("resultado1").innerHTML = "Seu IMC é: " + imc + " kg/m<sup>2</sup>";
+	let imc = (p/(a**2)).toFixed(2);
+	document.getElementById("resultado1").innerHTML = "Seu IMC é " + imc + " kg/m<sup>2</sup>";
 
 	if (i >= 65){
 		if (imc > 0){
@@ -19,7 +19,7 @@ function calculoIMC(){
 		else{
 			document.getElementById("resultado2").innerHTML = "Please enter valid details";}
 	}
-	if (i >= 20 && i <= 64){
+	if (i >= 18 && i <= 64){
 		if (imc > 0){
 			if (imc < 18.4){
 				document.getElementById("resultado2").innerHTML = "Baixo peso";}
@@ -38,7 +38,7 @@ function calculoIMC(){
 	}
 
 	if (i < 20){
-		document.getElementById("resultado2").innerHTML = "Você deve ter 20 anos ou mais para usar esta calculadora. Utilize a tabela de IMC pediátrico.";
+		document.getElementById("resultado3").innerHTML = "Você deve ter 20 anos ou mais para usar esta calculadora.<br>Utilize a tabela de IMC pediátrico.";
 	}
 	$("#tabela_imc").show();
 }
