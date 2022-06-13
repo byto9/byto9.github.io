@@ -1,0 +1,57 @@
+* {
+	padding: 0em;
+	margin: 0em;
+	box-sizing: border-box;
+	font-family: 'Press Start 2P', serif;
+	font-size: 3.5vh;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	background-attachment: fixed;
+	color: #555;
+}
+
+a:link, a:visited {
+	color: #777;
+}
+
+a:hover {
+	color: #a1f8b0;
+}
+
+::-moz-selection {
+  color: #555;
+  background: transparent;
+}
+
+::selection {
+  color: #555;
+  background: transparent;
+}
+
+.wrapper {
+	height: 100%;
+	padding: 1em;
+}
+
+#time {
+	color: #a1f8b0;
+	background-color: #333333a1;
+	padding: 1em;
+	border-radius: 1.5em;
+	text-shadow: 0em 0em 0.2em #7fff94a1;
+}
+
+footer {
+	padding-bottom: 2.5em;
+	font-size: 0.1em;
+	color: #777;
+}
