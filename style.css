@@ -27,7 +27,7 @@ main {
 .navimg {
 	width: 3em;
 	height: auto;
-	filter: drop-shadow(0.5em 0.5em 1em #ff828f);
+	filter: drop-shadow(0.1em 0.1em 0.2em #ff828f);
 }
 
 .wrapper {

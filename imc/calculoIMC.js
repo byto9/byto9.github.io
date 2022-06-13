@@ -38,7 +38,7 @@ function calculoIMC(){
 	}
 
 	if (i < 20){
-		document.getElementById("resultado3").innerHTML = "Você deve ter 20 anos ou mais para usar esta calculadora.<br>Utilize a tabela de IMC pediátrico.";
+		document.getElementById("resultado3").innerHTML = "Você deve ter 20 anos ou mais para usar esta calculadora.<br>Utilize uma calculadora de IMC pediátrico.";
 	}
 	$("#tabela_imc").show();
 }

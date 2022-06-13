@@ -3,22 +3,22 @@
 	margin: 0em;
 	box-sizing: border-box;
 	font-family: 'Dekko', serif;
-	font-weight: lighter;
-	font-size: 1.5vm;
-}
-
-html, body {
-	margin-top: 1.3em;
+	font-size: 1.5vh;
 }
 
 body {
 	background-image: linear-gradient(to bottom right, #d9cfff, #fbccff);
+	margin-top: 1.3em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;	
 	background-attachment: fixed;
 	color: #555;
+}
+
+td, th, p {
+	font-size: 1.3em;
 }
 
 footer {
@@ -32,7 +32,7 @@ h1 {
 }
 
 form {
-	margin: 1em;
+	margin: 0.5em;
 }
 
 .h1style {
@@ -123,18 +123,13 @@ table {
 }
 
 td {
-	width: 15em;
-
+	width: 11em;
 }
 
 .titulo {
 	background-color: #fbccff;
 	border-radius: 1em;
-}
-
-hr {
-	height: 0.01em;
-	color:#e8bfff
+	font-size: 1.4em;
 }
 
 .resultados {

@@ -1,24 +1,24 @@
 * {
-	padding: 0;
-	margin: 0;
+	padding: 0em;
+	margin: 0em;
 	box-sizing: border-box;
 	font-family: 'Dekko', serif;
-	font-weight: lighter;
-	font-size: 2vh;
-}
-
-html, body {
-	margin-top: 1.3em;
+	font-size: 1.5vh;
 }
 
 body {
 	background-image: linear-gradient(to bottom right, #d8eef7, #fff3cc);
+	margin-top: 1.3em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;	
 	background-attachment: fixed;
 	color: #555;
+}
+
+label, p {
+	font-size: 1.5em;
 }
 
 footer {
@@ -29,10 +29,6 @@ h1 {
 	font-weight: lighter;
 	font-family: 'Dekko', sans-serif;
 	font-size: 2em;
-}
-
-form {
-	margin: 1em;
 }
 
 .h1style {
@@ -101,17 +97,15 @@ button {
 	color: #541b5c;
 	border-radius: 1em;
 	text-align: center;
-	width: 10em;
-	height: 2.5em;
+	width: 12em;
+	height: 3em;
 	margin-bottom: 1em;	
 	border: 0.1em solid #555;
-
 }
 
 .white {
 	background-color: #f5f3ee7c;
 	box-shadow: inset 0.25em 0.25em 0.1em #e2dbcc69;
-
 }
 
 .yellow {
@@ -128,7 +122,7 @@ button {
 
 
 #num_to_dec::placeholder, #dec_to_num_result::placeholder {
-	font-size: 0.75em;
+	font-size: 0.7em;
 }
 
 [type="radio"]:checked, [type="radio"]:not(:checked) {
@@ -163,8 +157,8 @@ button {
     height: 0.45em;
     background: #e22d00;
     position: absolute;
-    top: 0.4em;
-    left: 0.175em;
+    top: 0.45em;
+    left: 0.25em;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
