@@ -13,20 +13,56 @@
 	</head>
 	<body onload="displayTime()">
 		<div class="wrapper">
-			<div id="nav-placeholder"></div>
-			<script type="text/javascript" src="nav.js"></script>
+			
+			<nav class="navbar bg-light fixed-top">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#"><img src="byto.png" class="navimg"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+					  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#sobre">Sobre mim</a>
+						</li>						
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Projetos
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+							<li><a class="dropdown-item" href="./pixelart/">Pixel Art Maker</a></li>
+							<li><a class="dropdown-item" href="./calc/">Calculadora</a></li>
+							<li><a class="dropdown-item" href="./imc/">Calcule seu IMC</a></li>
+							<li><a class="dropdown-item" href="./convert/">Conversor de numerais</a></li>
+						  </ul>
+						</li>
+						<li><a class="dropdown-item" href="#">Contatos</a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </nav>
+
 			<main>
-				<h1>Sejam bem vindos ao meu portfolio! Meu nome é Natália Oliveira! 🇧🇷 🇵🇹</h1>
-				<p>Sou formada e pós-graduada em Enfermagem, que é uma área que eu adoro, porém eu gostaria de tentar algo diferente.</p>
-				<p>Estou agora estudando Análise e Desenvolvimento de Sistemas na Universidade Cândido Mendes e também fazendo diversos cursos online.</p>
-				<p>Sempre gostei muito da área de tecnologia e adoro aprender coisas novas. Tenho bastante afinidade com a área de desenvolvimento front-end, gosto de fazer sites desde quando era mais nova.</p>
-				<p>No momento estou focada em estudar JavaScript, porém tenho interesse em aprender frameworks como jQuery, React.js e Node.js em breve.</p>
-				<hr>
-				<h1>Welcome to my portfolio! I'm Natália Oliveira! 🇺🇸 🇬🇧</h1>
-				<p>I'm a bachelor in Nursing, which is a career that I love but I want to try different things.</p>
-				<p>I'm now studying Software Analysis and Development at Universidade Cândido Mendes and also studying through online courses.</p>
-				<p>I love the IT field and to learn new things. My favorite area is front-end development and I've always liked creating websites since I was younger.</p>
-				<p>Currently I'm focused on studying JavaScript, but I'm also interested in learning frameworks like jQuery, React.js and Node.js soon.</p>
+				<div id="sobre">
+					<h1>Sejam bem vindos ao meu portfolio! Meu nome é Natália Oliveira! 🇧🇷 🇵🇹</h1>
+					<p>Sou formada e pós-graduada em Enfermagem pela Universidade Federal do Estado do Rio de Janeiro (Unirio), que é uma área que eu adoro, porém eu gostaria de tentar algo diferente. Fiz cursos de inglês na Cultura Inglesa e no Ibeu, meu nível de inglês é avançado.</p>
+					<p>Estou agora estudando Análise e Desenvolvimento de Sistemas na Universidade Cândido Mendes e também fazendo diversos cursos online.</p>
+					<p>Sempre gostei muito da área de tecnologia e adoro aprender coisas novas. Tenho bastante afinidade com a área de desenvolvimento Front-end e gosto de fazer sites desde quando era mais nova.</p>
+					<p>No momento estou focada em estudar JavaScript, porém tenho interesse em aprender frameworks como jQuery, React.js e Node.js em breve.</p>
+					<hr>
+					<h1>Welcome to my portfolio! I'm Natália Oliveira! 🇺🇸 🇬🇧</h1>
+					<p>I have a Bachelor's degree and a post-graduate degree in Nursing from the Federal University of the State of Rio de Janeiro (Unirio), which is a field that I love but I want to try different things.</p>
+					<p>I'm now studying Software Analysis and Development at Cândido Mendes University and also studying through online courses.</p>
+					<p>I love the IT field and to learn new things. My favorite area is Front-end development and I've always liked creating websites since I was younger.</p>
+					<p>Currently I'm focused on studying JavaScript, but I'm also interested in learning frameworks like jQuery, React.js and Node.js soon.</p>
+					<hr>
+				</div>				
 			</main>
 		</div>
 	</body>

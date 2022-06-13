@@ -12,38 +12,26 @@ body {
 	font-family: "Lora", serif;
 	text-shadow: 0.0625em 0.0625em #fff;
 	color: #555;
-
-}
-
-aside, main {
-	display: inline-block;
-	vertical-align: top;
 }
 
 main {
+	display: inline-block;
 	position: relative;
-	margin-left: 9em;
+	text-align: justify;
+	margin-top: 2em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 	font-size: 3em;
 }
 
-aside {
-	background-color: #ffffffb3;
-	width: 25em;
-	height: 100%;
-	display: inline-block;
-	justify-content: space-between;
-	flex-direction: column;
-	position: absolute;
+.navimg {
+	width: 3em;
+	height: auto;
+	filter: drop-shadow(0.5em 0.5em 1em #ff828f);
 }
 
 .wrapper {
-	height: 100%;
-}
-
-img {
 	width: 100%;
-	height: auto;
-	filter: drop-shadow(0.5em 0.5em 1em #ff828f);
 }
 
 a:link {
@@ -74,11 +62,6 @@ table {
 	opacity: 0.85;
 	border-radius: 0.625em;
 	text-align: center;
-}
-
-.navimg {
-	width: 90%;
-	margin-left: 0.75em;
 }
 
 ::-moz-selection {
