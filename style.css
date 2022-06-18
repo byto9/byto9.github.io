@@ -120,6 +120,7 @@ ul {
     font-size: 2em;
     color: #dd5e90;
     margin: 10px;
+    text-shadow: 2px 2px 0 #fff;
 }
 
 .pic {
@@ -133,7 +134,7 @@ ul {
     width: 400px;
     border-radius: 100px;
     border: 2px solid #fff;
-    box-shadow: 4px 4px 4px #9c8b99;
+    box-shadow: 4px 4px 0px #dd5e90;
     margin: 10px;
     filter: grayscale(50%);
 }
@@ -197,6 +198,7 @@ ul {
     font-weight: 700;
     color: #efebe8;
     margin-top: 20px;
+    text-shadow: 2px 2px 0 #dd5e90;
 }
 
 .skill-items {
@@ -253,6 +255,7 @@ ul {
     color: #dd5e90;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #fff;
 }
 
 .project-list {
@@ -305,6 +308,7 @@ ul {
     font-weight: 400;
     font-size: 2em;
     color: #555;
+    text-shadow: 2px 2px 0 #fff;
 }
 
 .contacts {
