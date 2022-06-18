@@ -1,73 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-		<title>Meu portfolio</title>
-		<script type="text/javascript" src="jquery.min.js"></script>
-		<script type="text/javascript" src="bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="clock.js"></script>
-		<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Euphoria+Script&family=Alegreya" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div class="wrapper">
-			
-			<nav class="navbar bg-light fixed-top custom">
-				<div class="container-fluid">
-				  <a class="navbar-brand" href="#"><img src="byto.png" class="navimg"></a>
-				  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-					<div class="offcanvas-header">
-					  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<div class="offcanvas-body">
-					  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item">
-						  <a class="nav-link active" aria-current="page" href="#sobre">Sobre mim</a>
-						</li>						
-						<li class="nav-item dropdown">
-						  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Projetos
-						  </a>
-						  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-							<li><a class="dropdown-item" href="./pixelart/">Pixel Art Maker</a></li>
-							<li><a class="dropdown-item" href="./calc/">Calculadora</a></li>
-							<li><a class="dropdown-item" href="./imc/">Calcule seu IMC</a></li>
-							<li><a class="dropdown-item" href="./convert/">Conversor de numerais</a></li>
-							<li><a class="dropdown-item" href="./relogio/">Relógio</a></li>
-						  </ul>
-						</li>
-						<li><a class="dropdown-item" href="#">Contatos</a></li>
-					  </ul>
-					</div>
-				  </div>
-				</div>
-			  </nav>
+<html>
 
-			<main>
-				<div id="sobre">
-					<span class="photo"><img class="pic" src="lattes.jpg"></span><br>
-					<p align="center">🇧🇷 🇵🇹</p>
-					<h1 align="center">Seja bem vindo ao meu portfolio! Meu nome é Natália Oliveira!</h1>
-					<p>Sou formada e pós-graduada em Enfermagem pela Universidade Federal do Estado do Rio de Janeiro (Unirio), que é uma área que eu adoro, porém eu gostaria de tentar algo diferente. Fiz cursos de inglês na Cultura Inglesa e no Ibeu, meu nível de inglês é avançado.</p>
-					<p>Estou agora estudando Análise e Desenvolvimento de Sistemas na Universidade Cândido Mendes e também fazendo diversos cursos online.</p>
-					<p>Sempre gostei muito da área de tecnologia e adoro aprender coisas novas. Tenho bastante afinidade com a área de desenvolvimento Front-end e gosto de fazer sites desde quando era mais nova.</p>
-					<p>No momento estou focada em estudar JavaScript, porém tenho interesse em aprender frameworks como jQuery, React.js e Node.js em breve.</p>
-					<hr>
-					<p align="center">🇺🇸 🇬🇧</p>
-					<h1 align="center">Welcome to my portfolio! I'm Natália Oliveira!</h1>
-					<p>I have a Bachelor's degree and a post-graduate degree in Nursing from the Federal University of the State of Rio de Janeiro (Unirio), which is a field that I love but I want to try different things.</p>
-					<p>I'm now studying Software Analysis and Development at Cândido Mendes University and also studying through online courses.</p>
-					<p>I love the IT field and to learn new things. My favorite area is Front-end development and I've always liked creating websites since I was younger.</p>
-					<p>Currently I'm focused on studying JavaScript, but I'm also interested in learning frameworks like jQuery, React.js and Node.js soon.</p>
-					<hr>
-				</div>				
-			</main>
-		</div>
-	</body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Natália Oliveira</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Lobster:wght@400&family=Quicksand:wght@300;700"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="site">
+        <header class="navbar" id="nav">
+            <div class="logo">
+                <h1>Natália Oliveira</h1>
+            </div>
+            <nav class="items">
+                <ul>
+                    <li><a class="anchor" href="#sobre">Sobre</a></li>
+                    <li><a class="anchor" href="#skills">Skills</a></li>
+                    <li><a class="anchor" href="#projetos">Projetos</a></li>
+                    <li><a class="anchor" href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content" id="sobre">
+
+            <div class="pic">
+                <img class="pic" src="lattes.jpg">
+            </div>
+
+            <div class="pt" id="pt-br">
+                <p align="center"></p>
+                <h1 align="center">Seja bem vindo ao meu portfolio!</h1>
+                <p>🇧🇷 🇵🇹 Sou formada e pós-graduada em Enfermagem pela Universidade Federal do Estado do Rio de
+                    Janeiro
+                    (Unirio), que é uma área que eu adoro, porém eu gostaria de tentar algo diferente.</p>
+                <p>Fiz cursos de
+                    inglês na Cultura Inglesa e no Ibeu, meu nível de inglês é avançado.</p>
+                <p>Estou agora estudando Análise e Desenvolvimento de Sistemas na Universidade Cândido Mendes e
+                    também
+                    fazendo diversos cursos online.</p>
+                <p>Sempre gostei muito da área de tecnologia e adoro aprender coisas novas. Tenho bastante afinidade
+                    com
+                    a área de desenvolvimento Front-end e gosto de fazer sites desde quando era mais nova.</p>
+                <p>No momento estou focada em estudar JavaScript, porém tenho interesse em aprender frameworks como
+                    jQuery, React.js e Node.js em breve.</p>
+            </div>
+
+            <div class="en" id="en-us">
+                <p align="center"></p>
+                <h1 align="center">Welcome to my portfolio!</h1>
+                <p>🇺🇸 🇬🇧 I have a Bachelor's degree and a post-graduate degree in Nursing from the Federal
+                    University of
+                    the State of Rio de Janeiro (Unirio), which is a field that I love but I want to try different
+                    things.</p>
+                <p>I'm now studying Software Analysis and Development at Cândido Mendes University and also studying
+                    through online courses.</p>
+                <p>I love the IT field and to learn new things. My favorite area is Front-end development and I've
+                    always liked creating websites since I was younger.</p>
+                <p>Currently I'm focused on studying JavaScript, but I'm also interested in learning frameworks like
+                    jQuery, React.js and Node.js soon.</p>
+            </div>
+        </main>
+
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="skill-items">
+                <p><img class="skill-img" src="logohtml.png" alt="HTML5"></p>
+                <p><img class="skill-img" src="logocss.png" alt="CSS3"></p>
+                <p><img class="skill-img" src="logojs.png" alt="JavaScript"></p>
+            </div>
+
+        </section>
+
+        <nav class="projects" id="projetos">
+            <h1>Projetos</h1>
+            <ul class="project-list">
+                <li>
+                    <div class="thumb-text"><a href="./pixelart/"><img class="thumb" src="./pixelart/pixelart.png"
+                                alt="Pixel Art Maker"></a><span class="legenda">Pixel Art Maker</span></div>
+                </li>
+                <li>
+                    <div class="thumb-text"><a href="./calc/"><img class="thumb" src="./calc/calc.png"
+                                alt="Calculadora"></a><span class="legenda">Calculadora</span></div>
+                </li>
+                <li>
+                    <div class="thumb-text"><a href="./imc/"><img class="thumb" src="./imc/imc.png"
+                                alt="Calcule seu IMC"></a><span class="legenda">Calcule seu IMC</span></div>
+                </li>
+                <li>
+                    <div class="thumb-text"><a href="./convert/"><img class="thumb" src="./convert/convert.png"
+                                alt="Conversor de numerais"></a><span class="legenda">Conversor de numerais</span></div>
+                </li>
+                <li>
+                    <div class="thumb-text"><a href="./relogio/"><img class="thumb" src="./relogio/relogio.png"
+                                alt="Relógio"></a><span class="legenda">Relógio</span></div>
+                </li>
+            </ul>
+        </nav>
+
+        <footer class="contacts">
+            <h1>Contatos</h1>
+        </footer>
+    </div>
+</body>
+
 </html>
