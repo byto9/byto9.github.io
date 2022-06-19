@@ -22,23 +22,6 @@ body {
         / 1fr 7fr 1fr;
 }
 
-@media (max-width: 760px) {
-    .site {
-        display: grid;
-        grid-template:
-            "navbar"
-            "content"
-            "skills"
-            "projects"
-            "footer";
-    }
-
-    .navbar {
-        padding-bottom: 20px;
-    }
-
-}
-
 /*Navbar*/
 
 .logo {
@@ -75,7 +58,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     border-radius: 10px;
     font-family: 'Quicksand', serif;
@@ -157,26 +140,6 @@ ul {
     margin-left: 10px;
 }
 
-@media (max-width: 760px) {
-    .content {
-        padding-top: 140px;
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 0px;
-        margin: 0;
-    }
-
-    .pt,
-    .en {
-        padding: 10px;
-    }
-
-    .pic img {
-        width: 300px;
-    }
-
-}
-
 /*Skills*/
 
 .skills {
@@ -239,14 +202,7 @@ ul {
 
 .projects a {
     text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    line-height: 4;
-    font-family: 'Quicksand', serif;
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #555;
+    color:#555;
 }
 
 .projects h1 {
@@ -282,23 +238,22 @@ ul {
 .thumb-text {
     position: relative;
     text-align: center;
-    color: #dd5e90;
-    text-shadow: 0 0 2px #fff;
+    color: #555;
+    text-shadow: 2px 2px 0 #fff;
     font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .legenda {
     position: absolute;
-    bottom: 40%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width: 760px) {
-    .thumb {
-        width: 400px;
-        height: auto;
-    }
+    transform: translate(-50%);
+    background: #f9c5d3d2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.72em;
 }
 
 /*Contacts*/
@@ -329,4 +284,60 @@ ul {
 ::selection {
     color: #fff;
     background: #ff80a1;
+}
+
+/* Media Queries */
+
+@media (max-width: 760px) {
+    
+    .site {
+        display: grid;
+        grid-template:
+            "navbar"
+            "content"
+            "skills"
+            "projects"
+            "footer";
+    }
+
+    .navbar {
+        padding-bottom: 20px;
+    }
+
+    .navbar nav ul {
+        font-size: 0.8em;
+    }
+
+    .content {
+        padding-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    .pt,
+    .en {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .pic img {
+        border-radius: 50px;
+        width: 200px;
+    }
+
+    .content h1, .skills h1, .projects h1 {
+        font-size: 1.7em;
+    }
+
+    .thumb {
+        width: 250px;
+        height: auto;
+    }
+
+    .thumb-text {
+        font-size: 1.4em;
+    }
+
 }
