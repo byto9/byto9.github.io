@@ -270,7 +270,7 @@ ul {
     height: 230px;
     border: 1px solid #555;
     border-radius: 30px;
-    filter: brightness(70%);
+    filter: opacity(30%);
     transition: 0.5s;
 }
 
@@ -282,8 +282,8 @@ ul {
 .thumb-text {
     position: relative;
     text-align: center;
-    color: #fff;
-    text-shadow: 0 0 2px #000;
+    color: #dd5e90;
+    text-shadow: 0 0 2px #fff;
     font-size: 2em;
 }
 
