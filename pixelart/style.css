@@ -33,11 +33,7 @@ h1 {
 	background: #fff;
 	border-radius: 30px;
 	padding: 20px 10px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	width: 80vmin;
+	width: 95vmin;
 }
 
 .top {
@@ -181,9 +177,8 @@ a:hover {
 }
 
 footer {
-	font-family: Dancing Script;
-	background-color: #ffd2df;
-	margin-top: 20px;
+	display: flex;
+	justify-content: center;
 }
 
 table {

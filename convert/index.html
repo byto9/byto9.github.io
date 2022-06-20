@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<title>Conversor de bases numéricas</title>
 	<link rel="icon" type="image/x-icon" href="../favicon.ico">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Quicksand:wght@300;700" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="convert.js"></script>	
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Quicksand:wght@300;700" rel="stylesheet"
+		type="text/css">
+	<script type="text/javascript" src="convert.js"></script>
 </head>
+
 <body>
 	<main>
 		<div class="wrapper">
-			<h1 class="h1style">Converter para decimal</h1>
-				<div>							
-					<form>
-						<p>Escolha a base numérica:</p>	
-						<input onclick="placeholderA()" type="radio" id="bin1" value="2" name="base_a" class="radio"><label for="bin1"> Binário (base 2)</label><br>
-						<input onclick="placeholderA()" type="radio" id="oct1" value="8" name="base_a" class="radio"><label for="oct1"> Octal (base 8)</label><br>
-						<input onclick="placeholderA()" type="radio" id="hex1" value="16" name="base_a" class="radio"><label for="hex1"> Hexadecimal (base 16)</label><br>
-					</form>
-					<p align="center"><input type="text" id="num_to_dec" class="input" placeholder="Escolha a base"> <button onclick="numToDec()" class="btn">»</button> <input type="text" id="num_to_dec_result" class="result" placeholder="decimal" disabled="disabled"><br></p>
-				</div>
-			<h1 class="h1style">Converter para outras bases</h1>
-				<div>
-					<form>
-						<p>Escolha a base numérica:</p>
-						<input onclick="placeholderB()" type="radio" id="bin2" value="2" name="base_b" class="radio"><label for="bin2"> Binário (base 2)</label><br>
-						<input onclick="placeholderB()" type="radio" id="oct2" value="8" name="base_b" class="radio"><label for="oct2"> Octal (base 8)</label><br>
-						<input onclick="placeholderB()" type="radio" id="hex2" value="16" name="base_b" class="radio"><label for="hex2"> Hexadecimal (base 16)</label><br>
-					</form>
-					<p align="center"><input type="text" id="dec_to_num" class="input" placeholder="decimal"> <button onclick="decToNum()" class="btn">»</button> <input type="text" id="dec_to_num_result" class="result" placeholder="Escolha a base" disabled="disabled"><br></p>
-				</div>
+			<h1>Converter para decimal</h1>
+			<div>
+				<form>
+					<p>Escolha a base numérica:</p>
+					<input onclick="placeholderA()" type="radio" id="bin1" value="2" name="base_a" class="radio"><label
+						for="bin1"> Binário (base 2)</label><br>
+					<input onclick="placeholderA()" type="radio" id="oct1" value="8" name="base_a" class="radio"><label
+						for="oct1"> Octal (base 8)</label><br>
+					<input onclick="placeholderA()" type="radio" id="hex1" value="16" name="base_a" class="radio"><label
+						for="hex1"> Hexadecimal (base 16)</label><br>
+				</form>
+				<p align="center"><input type="text" id="num_to_dec" class="input blank" placeholder="Escolha a base">
+					<button onclick="numToDec()" class="btn">»</button> <input type="text" id="num_to_dec_result"
+						class="input result" placeholder="decimal" disabled="disabled"><br>
+				</p>
+			</div>
+			<h1>Converter para outras bases</h1>
+			<div>
+				<form>
+					<p>Escolha a base numérica:</p>
+					<input onclick="placeholderB()" type="radio" id="bin2" value="2" name="base_b" class="radio"><label
+						for="bin2"> Binário (base 2)</label><br>
+					<input onclick="placeholderB()" type="radio" id="oct2" value="8" name="base_b" class="radio"><label
+						for="oct2"> Octal (base 8)</label><br>
+					<input onclick="placeholderB()" type="radio" id="hex2" value="16" name="base_b" class="radio"><label
+						for="hex2"> Hexadecimal (base 16)</label><br>
+				</form>
+				<p align="center"><input type="text" id="dec_to_num" class="input blank" placeholder="decimal"> <button
+						onclick="decToNum()" class="btn">»</button> <input type="text" id="dec_to_num_result"
+						class="input result" placeholder="Escolha a base" disabled="disabled"><br></p>
+			</div>
 		</div>
-	</main>			
+		<footer><a href="javascript:history.back()">« voltar</a></footer>
+	</main>
 </body>
-<footer><a href="javascript:history.back()">« voltar</a></footer>
+
 </html>

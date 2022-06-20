@@ -1,51 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<title>Consulta de CEP</title>
-		<meta charset="utf-8">
-	    <script type="text/javascript" src="../jquery-3.6.0.min.js"></script>
-	    <script type="text/javascript" src="../bootstrap.bundle.min.js"></script>
-	    <script type="text/javascript" src="main.js"></script>
-	    <link href="../bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link rel="icon" type="image/x-icon" href="../favicon.ico">
-	    <link href="style.css" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
-	</head>
-	<body>
+<html>
 
-				<span class="navbar-brand cuteb">Consulta CEP</span>
-			      <form class="d-flex" role="search">
-			        <input id="cep" class="form-control me-2" type="search" placeholder="Digite seu CEP" aria-label="Search">
-			        <button type="button" class="btn btn-outline-success" onclick="consultaCep()">Consultar</button>
-			      </form>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Consulta de CEP</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Quicksand:wght@300;700" rel="stylesheet"
+		type="text/css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="cep.js"></script>
+</head>
 
-		</div>
+<body>
 
-		<div class="container margin cepform">
+	<div class="container">
+		<main class="cepinput">
+			<h1 class="">Consulta CEP</h1>
+			<div>
+				<form role="search">
+				<p><input id="cep" type="search" placeholder="Digite seu CEP" aria-label="Search"><br>
+				<button type="button" class="btn" onclick="consultaCep()">Consultar</button></p>
+			</form>
+			</div>		
+			
+		</main>
+
+		<section class="cepform">
 			<div class="row">
-				<h3 id="titulo_cep">Consulta de CEP</h3>
+				<h2 id="titulo_cep"></h2>
 			</div>
+
 			<div class="row">
 				<table class="table">
-				  <tbody>
-				    <tr>
-				      <td><b class="cuteb">Logradouro</b></td>
-				      <td><b class="cuteb">Bairro</b></td>
-				      <td><b class="cuteb">Complemento</b></td>
-				      <td><b class="cuteb">Localidade</b></td>
-				      <td><b class="cuteb">UF</b></td>
-				    </tr>
-				    <tr>
-				      <td id="logradouro"></td>
-				      <td id="bairro"></td>
-				      <td id="complemento"></td>
-				      <td id="localidade"></td>
-				      <td id="uf"></td>
-				    </tr>
-				  </tbody>
+					<tr>
+						<td class="col1 topcol">Logradouro</td>
+						<td class="col2" id="logradouro"></td>
+					</tr>
+					<tr>
+						<td class="col1">Bairro</td>
+						<td class="col2" id="bairro"></td>
+					</tr>
+					<tr>
+						<td class="col1">Complemento</td>
+						<td class="col2" id="complemento"></td>
+					</tr>
+					<tr>
+						<td class="col1">Localidade</td>
+						<td class="col2" id="localidade"></td>
+					</tr>
+					<tr>
+						<td class="col1 bottomcol">UF</td>
+						<td class="col2" id="uf"></td>
+					</tr>
 				</table>
 			</div>
-		</div>
-	</body>
+
+		</section>
+	</div>
+
+
+	<footer><a href="javascript:history.back()">« voltar</a></footer>
+</body>
+
 </html>

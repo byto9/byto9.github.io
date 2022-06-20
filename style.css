@@ -228,6 +228,7 @@ ul {
     border-radius: 30px;
     filter: opacity(30%);
     transition: 0.5s;
+    margin: 0 5px 0;
 }
 
 .thumb:hover {
@@ -288,7 +289,7 @@ ul {
 
 /* Media Queries */
 
-@media (max-width: 760px) {
+@media (max-width: 1270px) {
     
     .site {
         display: grid;
@@ -334,6 +335,7 @@ ul {
     .thumb {
         width: 250px;
         height: auto;
+        margin: 0 5px 0;
     }
 
     .thumb-text {
