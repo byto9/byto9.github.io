@@ -20,6 +20,10 @@ body {
 	color: #555555;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:link {
 	color: #595758;
 }

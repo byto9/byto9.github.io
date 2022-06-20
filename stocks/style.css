@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Serif', serif;
-  font-size: 2vh;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
 }
 
 html, body, #container {
@@ -29,8 +29,14 @@ body {
   margin: 1em;
 }
 
-#border {
+.border {
   background-color: #fff;
-  border-radius: 3em;
-  box-shadow: 0.14em 0.14em 1em rgba(255, 130, 143, 0.7);
+  border-radius: 2em;
+  box-shadow: 0.14em 0.14em 1em #ff828fb3;
+  padding: 10px;
+}
+
+tr, td {
+  padding: 10px;
+  text-align: center;
 }

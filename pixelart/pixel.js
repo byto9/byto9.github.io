@@ -122,3 +122,11 @@ window.onload = () => {
   gridWidth.value = 0;
   gridHeight.value = 0;
 };
+
+function colorBorder() {
+  canvas.style.borderColor = "#aaa";
+}
+
+function eraseBorder() {
+  canvas.style.borderColor = "transparent";
+}
