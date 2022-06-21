@@ -24,10 +24,11 @@
 						for="oct1"> Octal (base 8)</label><br>
 					<input onclick="placeholderA()" type="radio" id="hex1" value="16" name="base_a" class="radio"><label
 						for="hex1"> Hexadecimal (base 16)</label><br>
+					<input onclick="placeholderA()" type="radio" id="customradio1" value="100" name="base_a" class="radio"><label for="customradio1">Outra base:</label> <input type="text" class="input custom" placeholder="(min 3 max 36)" id="custom1"><br>
 				</form>
-				<p align="center"><input type="text" id="num_to_dec" class="input blank" placeholder="Escolha a base">
+				<p align="center"><input type="text" id="num_to_dec" class="input" placeholder="escolha a base">
 					<button onclick="numToDec()" class="btn">»</button> <input type="text" id="num_to_dec_result"
-						class="input result" placeholder="decimal" disabled="disabled"><br>
+						class="input" placeholder="decimal" disabled="disabled"><br>
 				</p>
 			</div>
 			<h1>Converter para outras bases</h1>
@@ -40,10 +41,12 @@
 						for="oct2"> Octal (base 8)</label><br>
 					<input onclick="placeholderB()" type="radio" id="hex2" value="16" name="base_b" class="radio"><label
 						for="hex2"> Hexadecimal (base 16)</label><br>
+					<input onclick="placeholderB()" type="radio" id="customradio2" value="100" name="base_b" class="radio"><label for="customradio2">Outra base:</label> <input type="text" class="input custom" placeholder="(min 3 max 36)" id="custom2"><br>
+
 				</form>
-				<p align="center"><input type="text" id="dec_to_num" class="input blank" placeholder="decimal"> <button
+				<p align="center"><input type="text" id="dec_to_num" class="input" placeholder="decimal"> <button
 						onclick="decToNum()" class="btn">»</button> <input type="text" id="dec_to_num_result"
-						class="input result" placeholder="Escolha a base" disabled="disabled"><br></p>
+						class="input" placeholder="escolha a base" disabled="disabled"><br></p>
 			</div>
 		</div>
 		<footer><a href="javascript:history.back()">« voltar</a></footer>

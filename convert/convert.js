@@ -3,9 +3,13 @@ function numToDec() {
   let base = parseInt(
     document.querySelector("input[name=base_a]:checked").value
   );
-  let dec = parseInt(num, base);
+  let custom = parseInt(document.getElementById("custom1").value);
 
-  document.getElementById("num_to_dec_result").value = dec;
+  if (base == 100) {
+    document.getElementById("num_to_dec_result").value = parseInt(num, custom);
+  } else {
+    document.getElementById("num_to_dec_result").value = parseInt(num, base);
+  }
 }
 
 function decToNum() {
@@ -13,9 +17,13 @@ function decToNum() {
   let base = parseInt(
     document.querySelector("input[name=base_b]:checked").value
   );
-  let num = dec.toString(base);
+  let custom = parseInt(document.getElementById("custom2").value);
 
-  document.getElementById("dec_to_num_result").value = num;
+  if (base == 100) {
+    document.getElementById("dec_to_num_result").value = dec.toString(custom);
+  } else {
+    document.getElementById("dec_to_num_result").value = dec.toString(base);
+  }
 }
 
 function placeholderA() {
@@ -40,6 +48,13 @@ function placeholderA() {
           .placeholder.replace(
             document.getElementById("num_to_dec").placeholder,
             "hexadecimal"
+          )
+      : document.querySelector("input[name=base_a]:checked").value <= 100
+      ? document
+          .getElementById("num_to_dec")
+          .placeholder.replace(
+            document.getElementById("num_to_dec").placeholder,
+            "base aleatória"
           )
       : document.getElementById("num_to_dec").placeholder;
 }
@@ -66,6 +81,13 @@ function placeholderB() {
           .placeholder.replace(
             document.getElementById("dec_to_num_result").placeholder,
             "hexadecimal"
+          )
+      : document.querySelector("input[name=base_b]:checked").value <= 100
+      ? document
+          .getElementById("dec_to_num_result")
+          .placeholder.replace(
+            document.getElementById("dec_to_num_result").placeholder,
+            "base aleatória"
           )
       : document.getElementById("dec_to_num_result").placeholder;
 }
