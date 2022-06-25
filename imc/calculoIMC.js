@@ -6,8 +6,9 @@ function calculoIMC() {
   let p = document.getElementById("peso").value;
 
   let imc = (p / a ** 2).toFixed(2);
-  document.getElementById("resultado1").innerHTML =
-    "Seu IMC é " + imc + " kg/m<sup>2</sup>";
+  document.getElementById(
+    "resultado1"
+  ).innerHTML = `Seu IMC é ${imc} kg/m<sup>2</sup>`;
 
   if (i >= 65) {
     if (imc > 0) {
