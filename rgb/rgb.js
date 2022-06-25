@@ -43,6 +43,7 @@ function colorPicker() {
     opacity: parseInt(rgb.opacity.value).toString(16).padStart(2, "0"),
   };
 
+  document.body.style.backgroundImage = `linear-gradient(${color}, transparent)`;
   document.getElementById("color").style.backgroundColor = color;
   document.getElementById("rgbvalue").textContent = `RGB: ${color}`;
   document.getElementById(

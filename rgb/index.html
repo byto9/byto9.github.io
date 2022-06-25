@@ -14,6 +14,7 @@
     <div class="container">
         <div class="tools">
             <div class="rgbselect">
+                <p><span id="choosecolor">Color Picker</span></p>
                 <div class="input">
                     <label id="redtxt" for="red">Vermelho</label><br>
                     <input class="slider red" type="range" id="red" min="0" max="255" value="128">
@@ -31,16 +32,19 @@
                 </div>
                 <div class="input">
                     <label id="opacitytxt" for="opacity">Opacidade</label><br>
-                    <input class="slider" type="range" id="opacity" min="0" max="255" value="128">
-                    <span class="numberValue" id="opacity-value">0.50</span>
+                    <input class="slider opacity" type="range" id="opacity" min="0" max="255" value="255">
+                    <span class="numberValue" id="opacity-value">1.00</span>
                 </div>
             </div>
         </div>
 
-        <div class="colorselected" id="color" style="background-color: #aaaaaa80">
-            <p><span id="rgbvalue">RGB: rgb(128, 128, 128, 0.50)</span></p>
-            <p><span id="hexvalue">Hex: #80808080</span></p>
+        <div class="colorpick">
+            <div class="colorselected" id="color">
+                <p><span id="rgbvalue">RGB: rgb(128, 128, 128, 1.00)</span></p>
+                <p><span id="hexvalue">Hex: #808080ff</span></p>
+            </div>
         </div>
+
     </div>
     <script type="text/javascript" src="rgb.js"></script>
 
