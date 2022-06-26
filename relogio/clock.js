@@ -4,44 +4,45 @@ function realTime() {
 }
 
 function displayTime() {
-  let t = new Date();
+  const t = new Date();
 
-  let day = t.getDate().toString().padStart(2, "0");
-  let month = (t.getMonth() + 1).toString().padStart(2, "0");
-  let year = t.getFullYear().toString().padStart(2, "0");
+  const day = t.getDate().toString().padStart(2, "0");
+  const month = (t.getMonth() + 1).toString().padStart(2, "0");
+  const year = t.getFullYear().toString().padStart(2, "0");
 
-  let hour = t.getHours().toString().padStart(2, "0");
-  let min = t.getMinutes().toString().padStart(2, "0");
-  let sec = t.getSeconds().toString().padStart(2, "0");
+  const hour = t.getHours().toString().padStart(2, "0");
+  const min = t.getMinutes().toString().padStart(2, "0");
+  const sec = t.getSeconds().toString().padStart(2, "0");
 
-  let calendar = `${day}/${month}/${year}`;
-  let clock = `${hour}:${min}:${sec}`;
+  const calendar = `${day}/${month}/${year}`;
+  const clock = `${hour}:${min}:${sec}`;
 
-  if (hour >= 0 && hour < 5) {
-    document.getElementById(
-      "time"
-    ).innerHTML = `${calendar}<br>${clock}<br><br>ZzZ...`;
-    document.body.style.backgroundImage = "linear-gradient(#30305e, #b795dd)";
-  } else if (hour >= 5 && hour < 12) {
-    document.getElementById(
-      "time"
-    ).innerHTML = `${calendar}<br>${clock}<br><br>Bom dia!`;
-    document.body.style.backgroundImage = "linear-gradient(#a8e4f3, #ffe8f5)";
-  } else if (hour >= 12 && hour < 15) {
-    document.getElementById(
-      "time"
-    ).innerHTML = `${calendar}<br>${clock}<br><br>Boa tarde!`;
-    document.body.style.backgroundImage = "linear-gradient(#6bc4ff, #c6f4ff)";
-  } else if (hour >= 15 && hour < 18) {
-    document.getElementById(
-      "time"
-    ).innerHTML = `${calendar}<br>${clock}<br><br>Boa tarde!`;
-    document.body.style.backgroundImage = "linear-gradient(#5093c0, #fff9da)";
-  } else if (hour >= 18 && hour <= 23) {
-    document.getElementById(
-      "time"
-    ).innerHTML = `${calendar}<br>${clock}<br><br>Boa noite!`;
-    document.body.style.backgroundImage = "linear-gradient(#242270, #444da0)";
-  }
+  const clockTxt = document.getElementById("time");
+  const bg = document.body.style;
+
+  clockTxt.innerHTML =
+    hour >= 0 && hour < 5
+      ? `${calendar}<br>${clock}<br><br>ZzZ...`
+      : hour >= 5 && hour < 12
+      ? `${calendar}<br>${clock}<br><br>Bom dia!`
+      : hour >= 12 && hour < 18
+      ? `${calendar}<br>${clock}<br><br>Boa tarde!`
+      : hour >= 18 && hour <= 23
+      ? `${calendar}<br>${clock}<br><br>Boa noite!`
+      : clockTxt.innerHTML;
+
+  bg.backgroundImage =
+    hour >= 0 && hour < 5
+      ? "url('madrugada.png')"
+      : hour >= 5 && hour < 12
+      ? "url('manha.png')"
+      : hour >= 12 && hour < 15
+      ? "url('tarde1.png')"
+      : hour >= 15 && hour < 18
+      ? "url('tarde2.png')"
+      : hour >= 18 && hour <= 23
+      ? "url('noite.png')"
+      : bg.backgroundImage;
+
   realTime();
 }
