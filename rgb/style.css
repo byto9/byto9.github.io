@@ -206,13 +206,29 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    flex-direction: column;
     border: 2px solid #fff;
     background: #808080;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.colorselected p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+#rgbvalue, #hexvalue {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
 }
 
 .colorselected span {
     font-size: 1.4em;
     line-height: 1.4;
+    color: #fff;
+    font-weight: 100; 
 }
 
 #choosecolor {

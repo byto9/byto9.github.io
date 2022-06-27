@@ -154,7 +154,7 @@ label {
 	border: 1px solid transparent;
 }
 
-.gridCol {
+.canvasCell {
 	height: 1.23em;
 	width: 1.23em;
 	border-top-style: dotted;
@@ -165,7 +165,7 @@ label {
 	border-width: 1px;
 }
 
-.gridRow {
+.canvasRow {
 	display: flex;
 }
 
@@ -204,7 +204,7 @@ table {
 }
 
 @media (max-width:760px) {
-	.gridCol {
+	.canvasCell {
 		height: 0.615em;
 		width: 0.615em;
 	}

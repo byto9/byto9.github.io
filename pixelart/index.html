@@ -6,7 +6,6 @@
 	<title>pixel art maker ~</title>
 	<link rel="icon" type="image/x-icon" href="../favicon.ico">
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="translate.js"></script>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Quicksand:wght@300;700&family=Ubuntu+Mono:wght@400"
 		rel="stylesheet" type="text/css">
@@ -16,8 +15,7 @@
 	<div class="wrapper">
 		<div class="top"><span>
 				<h1>Pixel Art Maker</h1>
-			</span><span><button class="btn lang" onclick="translateEn()">EN</button> <button class="btn lang"
-					onclick="translatePt()">PT</button></span></div>
+			</span><span><button class="btn lang">Translate</button></span></div>
 		<div class="tools">
 			<div class="opt-wrapper">
 				<div class="size">
@@ -32,8 +30,8 @@
 				</div>
 			</div>
 			<div class="opt-wrapper">
-				<button class="btn" id="submit-grid" onclick="colorBorder()">Criar Tela</button>
-				<button class="btn" id="clear-grid" onclick="eraseBorder()">Limpar</button>
+				<button class="btn" id="submit-grid">Criar Tela</button>
+				<button class="btn" id="clear-grid">Limpar</button>
 				<input class="color-picker" type="color" id="color-input" value="#b2dfef">
 				<button class="btn" id="paint">Pintar</button>
 				<button class="btn" id="erase">Apagar</button>
@@ -43,8 +41,9 @@
 			<div class="canvas"></div>
 		</div>
 		<script type="text/javascript" src="pixel.js"></script>
+		<script type="text/javascript" src="translate.js"></script>
 	</div>
-	<footer><a href="javascript:history.back()">« voltar</a></footer>
+	<footer><a id="back" href="javascript:history.back()">« voltar</a></footer>
 </body>
 
 </html>

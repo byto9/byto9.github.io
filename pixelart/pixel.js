@@ -46,25 +46,25 @@ createCanvas.addEventListener("click", () => {
 
   for (let i = 0; i < gridHeight.value; i++) {
     count += 2;
-    let div = document.createElement("div");
-    div.classList.add("gridRow");
+    let row = document.createElement("div");
+    row.classList.add("canvasRow");
 
     for (let j = 0; j < gridWidth.value; j++) {
       count += 2;
-      let col = document.createElement("div");
-      col.classList.add("gridCol");
-      col.setAttribute("id", `gridCol${count}`);
+      let cell = document.createElement("div");
+      cell.classList.add("canvasCell");
+      cell.setAttribute("id", `canvasCell${count}`);
 
-      col.addEventListener(events[deviceType].down, () => {
+      cell.addEventListener(events[deviceType].down, () => {
         draw = true;
         if (erase) {
-          col.style.backgroundColor = "transparent";
+          cell.style.backgroundColor = "transparent";
         } else {
-          col.style.backgroundColor = colorTool.value;
+          cell.style.backgroundColor = colorTool.value;
         }
       });
 
-      col.addEventListener(events[deviceType].move, (e) => {
+      cell.addEventListener(events[deviceType].move, (e) => {
         let elementId = document.elementFromPoint(
           !isTouchDevice() ? e.clientX : e.touches[0].clientX,
           !isTouchDevice() ? e.clientY : e.touches[0].clientY
@@ -72,19 +72,19 @@ createCanvas.addEventListener("click", () => {
         checker(elementId);
       });
 
-      col.addEventListener(events[deviceType].up, () => {
+      cell.addEventListener(events[deviceType].up, () => {
         draw = false;
       });
 
-      div.appendChild(col);
+      row.appendChild(cell);
     }
-
-    canvas.appendChild(div);
+    canvas.appendChild(row);
   }
+  canvas.style.borderColor = "#aaa";
 });
 
 function checker(elementId) {
-  let gridColumns = document.querySelectorAll(".gridCol");
+  let gridColumns = document.querySelectorAll(".canvasCell");
   gridColumns.forEach((element) => {
     if (elementId == element.id) {
       if (draw && !erase) {
@@ -98,6 +98,7 @@ function checker(elementId) {
 
 clearCanvas.addEventListener("click", () => {
   canvas.innerHTML = "";
+  canvas.style.borderColor = "transparent";
 });
 
 eraseTool.addEventListener("click", () => {
@@ -109,24 +110,14 @@ paintTool.addEventListener("click", () => {
 });
 
 gridWidth.addEventListener("input", () => {
-  widthValue.innerHTML =
-    gridWidth.value < 9 ? `0${gridWidth.value}` : gridWidth.value;
+  widthValue.innerHTML = gridWidth.value.padStart(2, "0");
 });
 
 gridHeight.addEventListener("input", () => {
-  heightValue.innerHTML =
-    gridHeight.value < 9 ? `0${gridHeight.value}` : gridHeight.value;
+  heightValue.innerHTML = gridHeight.value.padStart(2, "0");
 });
 
 window.onload = () => {
   gridWidth.value = 0;
   gridHeight.value = 0;
 };
-
-function colorBorder() {
-  canvas.style.borderColor = "#aaa";
-}
-
-function eraseBorder() {
-  canvas.style.borderColor = "transparent";
-}

@@ -15,14 +15,6 @@ function consultaCep() {
       $("#titulo_cep").html("CEP " + response.cep);
       $(".cepform").show();
       $(".barra").hide();
-      /*
-			também pode ser assim:
-			document.getElementById("logradouro").innerHTML = response.logradouro;
-			document.getElementById("bairro").innerHTML = response.bairro;
-			document.getElementById("cep").innerHTML = response.cep;
-			document.getElementById("localidade").innerHTML = response.localidade;
-			document.getElementById("uf").innerHTML = response.uf;
-			*/
     },
   });
 }

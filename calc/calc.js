@@ -1,37 +1,67 @@
-function calc(type,value){
-	if (type === 'action'){
-		if (value === 'c'){
-			document.getElementById('result').value = ''
-		}
-		
-		if (value === 'x'){
-			document.getElementById('result').value = result.value.slice(0, -1)
-		}
+function calc(tipo, valor) {
+  const result = document.getElementById("result");
 
-		if (value === 'neg'){
-			document.getElementById('result').value = result.value * (-1)
-		}
+  if (tipo === "action") {
+    if (valor === "c") {
+      result.value = "";
+    }
 
-		if (value === '(' || value === ')'){
-			document.getElementById('result').value += value
-		}
+    if (valor === "x") {
+      result.value = result.value.slice(0, -1);
+    }
 
-		if (value === '+' || value === '-' || value === '/' || value === '*' || value === '**' || value === '%' || value === '.'){
-			if (result.value.endsWith(0) || result.value.endsWith(1) || result.value.endsWith(2) || result.value.endsWith(3) || result.value.endsWith(4) || result.value.endsWith(5) || result.value.endsWith(6) || result.value.endsWith(7) || result.value.endsWith(8) || result.value.endsWith(9) || result.value.endsWith('(') || result.value.endsWith(')')){
-				document.getElementById('result').value += value	
-			}
-			else if (result.value.endsWith('+') || result.value.endsWith('-') || result.value.endsWith('/') || result.value.endsWith('*') || result.value.endsWith('**') || result.value.endsWith('%') || result.value.endsWith('.')){
-				document.getElementById('result').value += ''
-			}
-		}		
+    if (valor === "neg") {
+      result.value = result.value * -1;
+    }
 
-		if (value === '='){
-			var resultValue = eval(document.getElementById('result').value)
-			document.getElementById('result').value = resultValue.toFixed(2)			
-		}
-	}
-		
-	if (type === 'num'){
-		document.getElementById('result').value += value
-	}
+    if (valor === "(" || valor === ")") {
+      result.value += valor;
+    }
+
+    if (
+      valor === "+" ||
+      valor === "-" ||
+      valor === "/" ||
+      valor === "*" ||
+      valor === "**" ||
+      valor === "%" ||
+      valor === "."
+    ) {
+      if (
+        result.value.endsWith(0) ||
+        result.value.endsWith(1) ||
+        result.value.endsWith(2) ||
+        result.value.endsWith(3) ||
+        result.value.endsWith(4) ||
+        result.value.endsWith(5) ||
+        result.value.endsWith(6) ||
+        result.value.endsWith(7) ||
+        result.value.endsWith(8) ||
+        result.value.endsWith(9) ||
+        result.value.endsWith("(") ||
+        result.value.endsWith(")")
+      ) {
+        result.value += valor;
+      } else if (
+        result.value.endsWith("+") ||
+        result.value.endsWith("-") ||
+        result.value.endsWith("/") ||
+        result.value.endsWith("*") ||
+        result.value.endsWith("**") ||
+        result.value.endsWith("%") ||
+        result.value.endsWith(".")
+      ) {
+        result.value += "";
+      }
+    }
+
+    if (valor === "=") {
+      let resultado = eval(result.value);
+      result.value = resultado.toFixed(2);
+    }
+  }
+
+  if (tipo === "num") {
+    result.value += valor;
+  }
 }

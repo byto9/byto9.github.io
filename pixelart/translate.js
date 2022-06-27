@@ -1,79 +1,44 @@
-function translateEn() {
-  document.getElementById("height-label").textContent =
-    document.getElementById("height-label").textContent <= "Definir Altura"
-      ? document
-          .getElementById("height-label")
-          .textContent.replace("Definir Altura", "Grid Height")
-      : document.getElementById("height-label").textContent;
+const button = document.querySelector(".lang");
+const heightTxt = document.querySelector("#height-label");
+const widthTxt = document.querySelector("#width-label");
+const createGrid = document.querySelector("#submit-grid");
+const clearGrid = document.querySelector("#clear-grid");
+const paintBtn = document.querySelector("#paint");
+const eraseBtn = document.querySelector("#erase");
 
-  document.getElementById("width-label").textContent =
-    document.getElementById("width-label").textContent <= "Definir Largura"
-      ? document
-          .getElementById("width-label")
-          .textContent.replace("Definir Largura", "Grid Width")
-      : document.getElementById("width-label").textContent;
+button.addEventListener("click", () => {
+  button.innerHTML =
+    button.innerHTML == "Translate"
+      ? button.innerHTML.replace("Translate", "Traduzir")
+      : button.innerHTML.replace("Traduzir", "Translate");
 
-  document.getElementById("submit-grid").textContent =
-    document.getElementById("submit-grid").textContent <= "Criar Tela"
-      ? document
-          .getElementById("submit-grid")
-          .textContent.replace("Criar Tela", "Create Grid")
-      : document.getElementById("submit-grid").textContent;
+  heightTxt.textContent =
+    heightTxt.textContent == "Definir Altura"
+      ? heightTxt.textContent.replace("Definir Altura", "Grid Height")
+      : heightTxt.textContent.replace("Grid Height", "Definir Altura");
 
-  document.getElementById("clear-grid").textContent =
-    document.getElementById("clear-grid").textContent <= "Limpar"
-      ? document
-          .getElementById("clear-grid")
-          .textContent.replace("Limpar", "Clear")
-      : document.getElementById("clear-grid").textContent;
+  widthTxt.textContent =
+    widthTxt.textContent == "Definir Largura"
+      ? widthTxt.textContent.replace("Definir Largura", "Grid Width")
+      : widthTxt.textContent.replace("Grid Width", "Definir Largura");
 
-  document.getElementById("paint").textContent =
-    document.getElementById("paint").textContent <= "Pintar"
-      ? document.getElementById("paint").textContent.replace("Pintar", "Paint")
-      : document.getElementById("paint").textContent;
+  createGrid.innerHTML =
+    createGrid.innerHTML == "Criar Tela"
+      ? createGrid.innerHTML.replace("Criar Tela", "Create Grid")
+      : createGrid.innerHTML.replace("Create Grid", "Criar Tela");
 
-  document.getElementById("erase").textContent =
-    document.getElementById("erase").textContent <= "Apagar"
-      ? document.getElementById("erase").textContent.replace("Apagar", "Erase")
-      : document.getElementById("erase").textContent;
-}
+  clearGrid.innerHTML =
+    clearGrid.innerHTML == "Limpar"
+      ? clearGrid.innerHTML.replace("Limpar", "Clear")
+      : clearGrid.innerHTML.replace("Clear", "Limpar");
 
-function translatePt() {
-  document.getElementById("height-label").textContent =
-    document.getElementById("height-label").textContent <= "Grid Height"
-      ? document
-          .getElementById("height-label")
-          .textContent.replace("Grid Height", "Definir Altura")
-      : document.getElementById("height-label").textContent;
+  paintBtn.innerHTML =
+    paintBtn.innerHTML == "Pintar"
+      ? paintBtn.innerHTML.replace("Pintar", "Paint")
+      : paintBtn.innerHTML.replace("Paint", "Pintar");
 
-  document.getElementById("width-label").textContent =
-    document.getElementById("width-label").textContent <= "Grid Width"
-      ? document
-          .getElementById("width-label")
-          .textContent.replace("Grid Width", "Definir Largura")
-      : document.getElementById("width-label").textContent;
-
-  document.getElementById("submit-grid").textContent =
-    document.getElementById("submit-grid").textContent <= "Create Grid"
-      ? document
-          .getElementById("submit-grid")
-          .textContent.replace("Create Grid", "Criar Tela")
-      : document.getElementById("submit-grid").textContent;
-
-  document.getElementById("clear-grid").textContent =
-    document.getElementById("clear-grid").textContent <= "Clear"
-      ? document
-          .getElementById("clear-grid")
-          .textContent.replace("Clear", "Limpar")
-      : document.getElementById("clear-grid").textContent;
-
-  document.getElementById("paint").textContent =
-    document.getElementById("paint").textContent <= "Paint"
-      ? document.getElementById("paint").textContent.replace("Paint", "Pintar")
-      : document.getElementById("paint").textContent;
-
-  document.getElementById("erase").textContent =
-    document.getElementById("erase").textContent <= "Erase"
-      ? document.getElementById("erase").textContent.replace("Erase", "Apagar")
-      : document.getElementById("erase").textContent;
-}
+  eraseBtn.innerHTML =
+    eraseBtn.innerHTML == "Apagar"
+      ? eraseBtn.innerHTML.replace("Apagar", "Erase")
+      : eraseBtn.innerHTML.replace("Erase", "Apagar");
+});
