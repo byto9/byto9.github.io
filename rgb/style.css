@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(#808080, transparent); 
+    /*background: linear-gradient(#808080, transparent); */
     background-attachment: fixed;
     color: #555;
     text-shadow: 1px 1px 2px #fff;
@@ -209,7 +209,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     border: 2px solid #fff;
-    background: #808080;
+    /*background: #808080;*/
     text-shadow: 2px 2px 5px #000;
 }
 
@@ -258,6 +258,23 @@ footer {
 ::selection {
 	color: #fff;
 	background: #ff828f;
+}
+
+.random {
+    appearance: none;
+    background: #ddd;
+    text-shadow: 1px 1px 1px #aaa;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.random:hover {
+    background: #fff;
+    border: 2px solid #ddd;
+    text-shadow: none;
+    cursor: pointer;
 }
 
 @media (max-width: 760px) {

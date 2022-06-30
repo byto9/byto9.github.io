@@ -122,7 +122,7 @@ ul {
     filter: grayscale(50%);
 }
 
-.pt {
+.pt { /*text*/
     grid-area: pt-br;
 }
 
@@ -130,7 +130,7 @@ ul {
     grid-area: en-us;
 }
 
-.pt,
+.pt, /*text*/
 .en {
     padding-right: 10px;
     display: block;
@@ -317,7 +317,7 @@ ul {
         margin: 0;
     }
 
-    .pt,
+    .pt, /*text*/
     .en {
         padding: 5px;
         font-size: 0.9em;

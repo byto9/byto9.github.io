@@ -1,10 +1,15 @@
-function colorPicker() {
+window.onload = () => {
   const rgb = {
     red: document.getElementById("red"),
     green: document.getElementById("green"),
     blue: document.getElementById("blue"),
     opacity: document.getElementById("opacity"),
   };
+
+  rgb.red.value = parseInt(Math.random() * 255);
+  rgb.green.value = parseInt(Math.random() * 255);
+  rgb.blue.value = parseInt(Math.random() * 255);
+  rgb.opacity.value = parseInt(Math.random() * 255);
 
   const colorValue = {
     red: document.getElementById("red-value"),
@@ -13,21 +18,10 @@ function colorPicker() {
     opacity: document.getElementById("opacity-value"),
   };
 
-  rgb.red.addEventListener("input", () => {
-    colorValue.red.innerHTML = `${rgb.red.value.padStart(2, "0")}`;
-  });
-
-  rgb.green.addEventListener("input", () => {
-    colorValue.green.innerHTML = `${rgb.green.value.padStart(2, "0")}`;
-  });
-
-  rgb.blue.addEventListener("input", () => {
-    colorValue.blue.innerHTML = `${rgb.blue.value.padStart(2, "0")}`;
-  });
-
-  rgb.opacity.addEventListener("input", () => {
-    colorValue.opacity.innerHTML = (rgb.opacity.value / 255).toFixed(2);
-  });
+  colorValue.red.textContent = `${rgb.red.value.padStart(2, "0")}`;
+  colorValue.green.textContent = `${rgb.green.value.padStart(2, "0")}`;
+  colorValue.blue.textContent = `${rgb.blue.value.padStart(2, "0")}`;
+  colorValue.opacity.textContent = (rgb.opacity.value / 255).toFixed(2);
 
   const color = `rgba(${rgb.red.value}, ${rgb.green.value}, ${
     rgb.blue.value
@@ -46,12 +40,4 @@ function colorPicker() {
   document.getElementById(
     "hexvalue"
   ).textContent = `#${hex.red}${hex.green}${hex.blue}${hex.opacity}`;
-}
-
-const sliders = document.getElementsByClassName("slider");
-
-for (const slider of sliders) {
-  slider.addEventListener("input", colorPicker);
-}
-
-colorPicker();
+};
