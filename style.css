@@ -126,6 +126,14 @@ ul {
     grid-area: pt-br;
 }
 
+.pt p::first-letter, .en p::first-letter {
+    color:#e74f78;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 2px;
+    text-shadow: 2px 2px 0 #fff;
+}
+
 .en {
     grid-area: en-us;
 }
@@ -265,6 +273,7 @@ ul {
     font-size: 2em;
     color: #555;
     text-shadow: 2px 2px 0 #fff;
+    margin-bottom: 5px;
 }
 
 .contacts {
@@ -273,6 +282,10 @@ ul {
     background: #f9c5d3;
     text-align: center;
     padding-top: 40px;
+}
+
+.contacts p {
+    margin: 5px;
 }
 
 /*etc*/
@@ -285,6 +298,17 @@ ul {
 ::selection {
     color: #fff;
     background: #ff80a1;
+}
+
+a {
+    color: #dd5e90;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    transition: 250ms ease-in-out;
 }
 
 /* Media Queries */

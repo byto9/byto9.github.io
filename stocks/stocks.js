@@ -1,12 +1,7 @@
 function stockData() {
   let ticker = document.getElementById("ticker").value;
   let time = document.getElementById("time").value;
-  let url =
-    "https://api.twelvedata.com/time_series?symbol=" +
-    ticker +
-    "&interval=" +
-    time +
-    "&apikey=7227d36e03f248d28a281745ced26940";
+  let url = `https://api.twelvedata.com/time_series?symbol=${ticker}&interval=${time}&apikey=7227d36e03f248d28a281745ced26940`;
   console.log(url);
 
   $.ajax({
