@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "product": "Bergamot Candle",
+      "description": "Description here",
+      "picture": "bergamot.jpg",
+      "price": 24.9
+    },
+    {
+      "id": "1",
+      "product": "Champagne Toast Candle",
+      "description": "Description here",
+      "picture": "champagne.jpg",
+      "price": 24.9
+    },
+    {
+      "id": "2",
+      "product": "Thank You Candle",
+      "description": "Description here",
+      "picture": "thankyou.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "3",
+      "product": "Floral Candles",
+      "description": "Description here",
+      "picture": "floralcandles.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "4",
+      "product": "Strawberry Candles",
+      "description": "Description here",
+      "picture": "pinkcandles.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "5",
+      "product": "Sculpture Candles",
+      "description": "Description here",
+      "picture": "collection1.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "6",
+      "product": "Apricot Blossom Candle",
+      "description": "Description",
+      "picture": "apricotblossom.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "7",
+      "product": "Bamboo Jasmine Candle",
+      "description": "Description",
+      "picture": "bamboojasmine.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "8",
+      "product": "Woman Candle",
+      "description": "Description",
+      "picture": "woman.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "9",
+      "product": "Nudesse Candle",
+      "description": "Description",
+      "picture": "nudesse.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "10",
+      "product": "Forest Candle",
+      "description": "Description",
+      "picture": "forest.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "11",
+      "product": "Flor de Venus Candle",
+      "description": "Description",
+      "picture": "flordevenus.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "12",
+      "product": "Herbal Candles",
+      "description": "Description",
+      "picture": "herbalcandles.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "13",
+      "product": "Voluspa Candles",
+      "description": "Description",
+      "picture": "voluspacandles.jpg",
+      "price": 24.99
+    }
+  ]
+}
