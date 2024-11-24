@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>seletor de cores ~</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tools">
+            <div class="rgbselect">
+                <p><span id="choosecolor">Color Picker</span></p>
+                <div class="input">
+                    <label id="redtxt" for="red">Vermelho</label><br>
+                    <input class="slider red" type="range" id="red" min="0" max="255">
+                    <span class="numberValue" id="red-value"></span>
+                </div>
+                <div class="input">
+                    <label id="greentxt" for="green">Verde</label><br>
+                    <input class="slider green" type="range" id="green" min="0" max="255">
+                    <span class="numberValue" id="green-value"></span>
+                </div>
+                <div class="input">
+                    <label id="bluetxt" for="blue">Azul</label><br>
+                    <input class="slider blue" type="range" id="blue" min="0" max="255">
+                    <span class="numberValue" id="blue-value"></span>
+                </div>
+                <div class="input">
+                    <label id="opacitytxt" for="opacity">Opacidade</label><br>
+                    <input class="slider opacity" type="range" id="opacity" min="0" max="255">
+                    <span class="numberValue" id="opacity-value"></span>
+                </div>
+                <div>
+                    <button id="random">Cor aleatória</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="colorpick">
+            <div class="colorselected" id="color">
+                <p>RGB: <span id="rgbvalue"></span></p>
+                <p>Hex: <span id="hexvalue"></span></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="color.js"></script>
+    <footer><a href="javascript:history.back()">« voltar</a></footer </body>
+
+</html>
