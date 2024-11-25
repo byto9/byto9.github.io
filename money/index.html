@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="money.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <p>Amount: <input class="input" type="number" inputmode="numeric" id="amount" step="0.01" value="0.00"
+                    placeholder="Digite um valor numérico"></p>
+            <p> From:
+                <select name="currency1" id="currency1">
+                    <option value="USD">US Dollar</option>
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="EUR">Euro</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ARS">Argentine Peso</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="ILS">New Israeli Shekel</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="LBP">Lebanese Pound</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                </select>
+                To:
+                <select name="currency2" id="currency2">
+                    <option value="BRL">Brazilian Real</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ARS">Argentine Peso</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="ILS">New Israeli Shekel</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="LBP">Lebanese Pound</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="RUB">Russian Ruble</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="TRY">Turkish Lira</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="ZAR">South African Rand</option>
+                </select>
+            </p>
+            <p><button class="btn" id="btn" onclick="convertCurrency(); return false;">Convert</button></p>
+            <p>
+            <div class="result" id="result">Your result appears here</div>
+            </p>
+        </form>
+    </div>
+    <footer><a href="javascript:history.back()">« go back</a></footer>
+
+
+</body>
+
+</html>
