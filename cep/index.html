@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Consulta de CEP</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="container">
+
+		<section id="input">
+			<h1>Consulta CEP</h1>
+			<div>
+				<form>
+					<p>
+						<input type="text" id="cep" placeholder="Digite seu CEP"><br>
+						<button id="btn">Consultar</button>
+					</p>
+				</form>
+			</div>
+		</section>
+
+		<section id="output" class="hide">
+			<div>
+				<h2 id="titulo_cep"></h2>
+			</div>
+
+			<div>
+				<table>
+					<tr>
+						<th>Logradouro</td>
+						<td id="logradouro"></td>
+					</tr>
+					<tr>
+						<th>Bairro</td>
+						<td id="bairro"></td>
+					</tr>
+					<tr>
+						<th>Complemento</td>
+						<td id="complemento"></td>
+					</tr>
+					<tr>
+						<th>Localidade</td>
+						<td id="localidade"></td>
+					</tr>
+					<tr>
+						<th>UF</td>
+						<td id="uf"></td>
+					</tr>
+				</table>
+				<button id="clear">Limpar</button>
+			</div>
+			
+		</section>
+
+	</div>
+	<script type="text/javascript" src="cep.js"></script>
+
+	<footer><a href="javascript:history.back()">« voltar</a></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2vh;
+
+	--blue: #0071ad;
+	--yellow: #ffd400;
+
+}
+
+body {
+	background-color: var(--blue);
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 1em;
+	font-weight: 500;
+}
+
+.hide {
+	visibility: hidden;
+	transition: visibility .8s, max-height .4s;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.show {
+	visibility: visible;
+	max-height: 1000px;
+}
+
+#container {
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid var(--yellow);
+	backdrop-filter: blur(6px);
+	height: 100%;
+	width: 20em;
+	padding: 1em;
+	border-radius: 0.6em;
+}
+
+h1 {
+	color: #000;
+	font-weight: 400;
+	min-width: 12em;
+	text-align: center;
+	align-items: center;
+	border-radius: 0.7em;
+	margin: .5em 0 e0;
+	padding-top: .3em;
+	height: 2em;
+	font-size: 1.5em;
+}
+
+#input {
+	grid-area: input;
+	align-items: center;
+	text-align: center;
+}
+
+#output {
+	grid-area: form;
+	transition: .4s;
+	animation: 3s infinite alternate slidein;
+}
+
+#cep {
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Roboto Mono';
+	color: #000;
+	border-radius: 0.75em;
+	text-align: center;
+	width: 15em;
+	height: 3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	background: #fff;
+}
+
+button {
+	color: var(--yellow);
+	border-radius: 1em;
+	border: 0;
+	font-size: 1em;
+	padding: .4em 2em .4em;
+	background: var(--blue);
+	align-self: center;
+	transition: .4s;
+}
+
+button:hover {
+	filter: brightness(150%);
+}
+
+h2 {
+	text-align: center;
+	margin: .7em;
+	font-size: 1.5em;
+	color: var(--blue);
+	font-weight: 400;
+}
+
+table {
+	line-height: 1.4;
+	border-collapse: separate;
+	border-spacing: 0;
+	margin-bottom: 1em;
+}
+
+table tr th {
+	padding: 1em;
+}
+
+table tr:first-child th:first-child {
+	border-top-left-radius: 1em;
+}
+
+table tr:first-child td:last-child {
+	border-top-right-radius: 1em;
+}
+
+table tr:last-child th:first-child {
+	border-bottom-left-radius: 1em;
+}
+
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 1em;
+}
+
+th {
+	font-weight: 700;
+	padding: .5em;
+}
+
+tr:nth-child(odd) th {
+	background: rgba(0, 113, 173, 0.5);
+}
+
+tr:nth-child(even) th {
+	background: rgba(0, 113, 173, 0.3);
+}
+
+td {
+	padding: .5em;
+}
+
+tr:nth-child(odd) td {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+tr:nth-child(even) td {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+#output div:nth-child(even) {
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	font-weight: 700;
+	text-align: center;
+	align-items: center;
+	margin: .5em 0 .5em;
+	height: 2em;
+}
+
+a {
+	text-decoration: none;
+	transition: .4s;
+}
+
+a:link,
+a:visited {
+	color: var(--yellow);
+	text-shadow: 0 0 .3em #000;
+}
+
+a:hover {
+	color: #fff;
+	text-shadow: 0 0 .3em #fff;
+}
+
+::-moz-selection {
+	color: #fff;
+	background: rgba(37, 44, 50, 0.5);
+}
+
+::selection {
+	color: #fff;
+	background: rgba(37, 44, 50, 0.5);
+}
+
+@media (max-width: 760px) {
+	* {
+		font-size: 2vmax;
+	}
+
+	#container {
+		max-width: 100%;
+	}
+}
