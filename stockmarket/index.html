@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Stock Market</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<section id="input">
+			<form>
+
+				<p>Company: <select class="input" name="stock" id="ticker">
+						<option value="none" selected disabled hidden>Select</option>
+						<option value="TSLA">Tesla</option>
+						<option value="MSFT">Microsoft</option>
+						<option value="KO">Coca-Cola</option>
+						<option value="NVDA">Nvidia</option>
+						<option value="PEP">Pepsi</option>
+						<option value="AMD">AMD</option>
+						<option value="MCD">McDonald's</option>
+						<option value="AAPL">Apple</option>
+						<option value="HSY">Hershey's</option>
+						<option value="AMZN">Amazon</option>
+
+					</select><!--<input class="input" type="text" id="ticker" placeholder="ex.: TSLA">--></p>
+				<p>Prices in the last <input class="input" type="number" id="periods" placeholder="5" min="1" max="30">
+					<select class="input" name="time" id="time">
+						<option value="none" selected disabled hidden>periods</option>
+						<option value="1min">minutes</option>
+						<option value="1h">hours</option>
+						<option value="1day">days</option>
+						<option value="1week">weeks</option>
+						<option value="1month">months</option>
+					</select></p>
+				<p><button class="input" type="button" id="submit">View data</button> <button class="input"
+						type="button" id="clear">Clean</button>
+				</p>
+
+			</form>
+		</section>
+
+		<section id="output">
+
+			<div id="results" class="hide">
+				<div class="meta" id="stockChart">
+				</div>
+				<table class="meta" id="stockPrices">
+					<tbody></tbody>
+				</table>
+			</div>
+		</section>
+
+	</div>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+	<script type="text/javascript" src="stocks.js"></script>
+
+</body>
+
+</html>

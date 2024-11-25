@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto+Mono:wght@200;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  transition: .4s;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 1em;
+}
+
+body {
+
+  background-image: linear-gradient(#424242 1px, transparent 1px), linear-gradient(to right, #424242 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-color: #313131;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+
+}
+
+.container {
+  background: rgba(62, 62, 62, 0.69);
+  width: 100%;
+  border-radius: .5em;
+  box-shadow: 0 0 1em rgba(130, 247, 255, 0.7);
+  padding: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 1em
+}
+
+.stockPrices tbody {
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.row {
+  margin: .5em;
+  transition: .4s;
+}
+
+form {
+  line-height: 3em;
+}
+
+table {
+  table-layout: fixed;
+}
+
+option {
+  color: #000;
+
+}
+
+tr,
+td {
+  padding: .3em;
+  text-align: center;
+  font-size: 1.1em;
+  border-radius: .5em;
+}
+
+tr {
+  width: 100%;
+}
+
+td {
+  width: 25%;
+}
+
+.input {
+  background: rgba(82, 82, 151, 0.2);
+  color: #ccc;
+  height: 2.5em;
+  min-width: 2.5em;
+  max-width: 8em;
+  padding: .5em;
+  border: solid 1px #777;
+  text-align: center;
+  border-radius: .5em;
+}
+
+.input:hover {
+  background: rgb(130, 247, 255, 0.5);
+  box-shadow: 0.2em 0.2em 1.5em rgba(130, 247, 255, 0.7);
+}
+
+.input:focus {
+  border: solid 1px #fff;
+}
+
+.tableHeader {
+  background: rgba(130, 247, 255, 0.483);
+  color: #fff;
+  font-weight: 700;
+  font-size: .9em;
+
+}
+
+.data {
+  font-weight: 700;
+}
+
+.open,
+.low {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.data,
+.high,
+.close {
+  background: rgba(50, 50, 50, 0.1);
+}
+
+.hide {
+  display: none;
+}
+
+#myChart {
+  margin: .5em;
+  border-radius: .5em;
+  background: #00000080;
+  width: 100%;
+}
+
+::-moz-selection {
+  color: #000;
+  background: rgba(209, 209, 230, 0.2);
+}
+
+::selection {
+  color: #000;
+  background: rgba(209, 209, 230, 0.2);
+}
+
+/* Queries */
+
+@media (max-width: 760px) {
+  * {
+    font-size: 13px;
+  }
+
+  html,
+  body {
+    height: auto;
+    margin: 1em;
+    font-size: .8em;
+  }
+
+  body {
+    background-size: 400%;
+    background-position: 70%;
+
+  }
+
+  tr,
+  td {
+    font-size: .9em;
+  }
+
+
+}
