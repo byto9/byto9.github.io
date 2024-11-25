@@ -13,36 +13,36 @@ body {
     color: #555;
     text-shadow: 1px 1px 2px #fff;
     display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
 }
 
 a:link {
     text-decoration: none;
-	color: #d44c6b;
+    color: #d44c6b;
 }
 
 a:visited {
-	color: #e0007b;
+    color: #e0007b;
 }
 
 a:hover {
     font-weight: 700;
     color: transparent;
-	background: linear-gradient(90deg, #f12020, #ffae16, #ffef60, #abf325, #13c731, #246bf0, #a331c5, #ff30cb);
+    background: linear-gradient(90deg, #f12020, #ffae16, #ffef60, #abf325, #13c731, #246bf0, #a331c5, #ff30cb);
     background-clip: text;
     -webkit-background-clip: text;
     transition: 500ms ease-in-out;
 }
 
 .container {
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .tools {
@@ -103,45 +103,45 @@ a:hover {
 }
 
 .slider {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: transparent;
-	border-radius: 12px;
-	outline: none;
-	opacity: 0.8;
-	width: 40em;
+    border-radius: 12px;
+    outline: none;
+    opacity: 0.8;
+    width: 40em;
     margin-top: 10px;
-	-webkit-transition: .2s;
-	transition: opacity .4s;
+    -webkit-transition: .2s;
+    transition: opacity .4s;
 }
 
 .slider:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border-radius: 100%;
-	width: 25px;
-	height: 25px;
-	appearance: none;
-	background: #e282ff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    background: #e282ff;
     border: 2px solid #e282ff;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border-radius: 100%;
-	width: 25px;
-	height: 25px;
-	appearance: none;
-	background: #e282ff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    background: #e282ff;
     border: 2px solid #e282ff;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .red {
@@ -151,7 +151,7 @@ a:hover {
 .red::-webkit-slider-thumb {
     background: #ee4343;
     border: 2px solid #ee4343;
-} 
+}
 
 .red::-moz-range-thumb {
     background: #ee4343;
@@ -190,7 +190,8 @@ a:hover {
     background: #e282ff80;
 }
 
-.colorpick, .colorselected {
+.colorpick,
+.colorselected {
     width: 400px;
     height: 100px;
     border-radius: 200px;
@@ -219,7 +220,8 @@ a:hover {
     color: #fff;
 }
 
-#rgbvalue, #hexvalue {
+#rgbvalue,
+#hexvalue {
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
 }
@@ -228,7 +230,7 @@ a:hover {
     font-size: 1.4em;
     line-height: 1.4;
     color: #fff;
-    font-weight: 100; 
+    font-weight: 100;
 }
 
 #choosecolor {
@@ -246,18 +248,18 @@ a:hover {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 ::-moz-selection {
-	color: #fff;
-	background: #ff828f;
+    color: #fff;
+    background: #ff828f;
 }
 
 ::selection {
-	color: #fff;
-	background: #ff828f;
+    color: #fff;
+    background: #ff828f;
 }
 
 #random {
@@ -285,20 +287,26 @@ footer {
         height: 400px;
         border-radius: 20px;
     }
-    .rgbselect, .input label {
+
+    .rgbselect,
+    .input label {
         margin: 0;
         padding: 0;
     }
+
     .slider {
         padding: 0;
         margin: 0;
         width: 13em;
     }
-    .colorpick, .colorselected {
+
+    .colorpick,
+    .colorselected {
         width: 300px;
         height: 100px;
         border-radius: 20px;
     }
+
     .colorselected span {
         font-size: 1.2em;
     }
