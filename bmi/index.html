@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Calculate Your BMI!</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Quicksand:wght@300;400;500;700"
+		rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+
+</head>
+
+<body>
+	<main>
+		<div class="wrapper">
+			<h1>Calculate Your BMI!</h1>
+			<form>
+				<p>Your age: <input class="input" type="text" id="age" placeholder="30"></p>
+				<p>Your height in meters: <input class="input" type="text" id="height" placeholder="1.70"></p>
+				<p>Your weight in kg: <input class="input" type="text" id="weight" placeholder="60"></p>
+				<p><button id="submit" class="btn" onclick="getBMI(); return false;">Submit</button></p>
+			</form>
+
+			<div>
+				<span class="results">
+					<p id="result1"></p>
+					<p id="result2"></p>
+					<p id="result3"></p>
+				</span>
+
+				<div class="bmi_table">
+					<table>
+						<tr>
+							<td class="bold" colspan="2">In Adults (20 to 64 years)</td>
+						</tr>
+						<tr>
+							<td class="title left"><b>BMI</b></td>
+							<td class="title right"><b>Classification</b></td>
+						</tr>
+						<tr>
+							<td>
+								< 18.5</td>
+							<td>Underweight</td>
+						</tr>
+						<tr>
+							<td>18.5 - 24.9</td>
+							<td>Normal Weight</td>
+						</tr>
+						<tr>
+							<td>25 - 29.9</td>
+							<td>Overweight</td>
+						</tr>
+						<tr>
+							<td>30 - 34.9</td>
+							<td>Obesity Grade I</td>
+						</tr>
+						<tr>
+							<td>35 - 39.9</td>
+							<td>Obesity Grade II</td>
+						</tr>
+						<tr>
+							<td>>= 40</td>
+							<td>Obesity Grade III</td>
+						</tr>
+						<tr>
+							<td class="bold" colspan="2">In Seniors (65 years or older)</td>
+						</tr>
+						<tr>
+							<td class="title left"><b>BMI</b></td>
+							<td class="title right"><b>Classification</b></td>
+						</tr>
+						<tr>
+							<td>
+								< 23</td>
+							<td>Underweight</td>
+						</tr>
+						<tr>
+							<td>23 - 30</td>
+							<td>Normal Weight</td>
+						</tr>
+						<tr>
+							<td>> 30</td>
+							<td>Overweight</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="bmi.js"></script>
+</body>
+<footer><a href="javascript:history.back()">« go back</a></footer>
+
+</html>
