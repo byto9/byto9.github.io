@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<title>Calculator</title>
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<link href="calc.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="calculator">
+			<input type="text" id="result" placeholder="0">
+			<div>
+				<button id="par_open">(</button>
+				<button id="par_close">)</button>
+				<button id="clear">C</button>
+				<button id="bcksp">⌫</button>
+			</div>
+
+			<div>
+				<button id="inverse">1/x</button>
+				<button id="mod">mod</button>
+				<button id="sqrt">√x</button>
+				<button id="exponent">x<sup>y</sup></button>
+			</div>
+
+			<div>
+				<button id="pi">π</button>
+				<button id="euler">e</button>
+				<button id="factorial">x!</button>
+				<button id="divide">÷</button>
+			</div>
+
+			<div>
+				<span class="num">
+					<button id="seven">7</button>
+					<button id="eight">8</button>
+					<button id="nine">9</button>
+				</span>
+				<button id="multiply">x</button>
+			</div>
+
+			<div>
+				<span class="num">
+					<button id="four">4</button>
+					<button id="five">5</button>
+					<button id="six">6</button>
+				</span>
+				<button id="minus">-</button>
+			</div>
+
+			<div>
+				<span class="num">
+					<button id="one">1</button>
+					<button id="two">2</button>
+					<button id="three">3</button>
+				</span>
+				<button id="plus">+</button>
+			</div>
+
+			<div>
+				<span class="num">
+					<button id="negative">+-</button>
+					<button id="zero">0</button>
+					<button id="dot">.</button>
+				</span>
+				<button id="equals">=</button>
+			</div>
+		</div>
+
+		<div class="history">
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="calc.js"></script>
+	<footer>
+		<p style="margin-top: 20px;"><a href="javascript:history.back()">« go back</a></p>
+	</footer>
+
+</body>
+
+</html>

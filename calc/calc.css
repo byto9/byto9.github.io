@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Quicksand:wght@400;700');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 3vh;
+
+	--calc: #a9aeb1;
+	--num-btn: #e9ebeb;
+	--op-btn: #6c7376;
+	--c-btn: #ff2280;
+	--equal-btn: #90c6ff;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: url("desk.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-attachment: fixed;
+	color: #555;
+}
+
+a {
+	text-decoration: none;
+	transition: .4s;
+}
+
+a:link,
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: #fff;
+	text-shadow: 0 0 .5em #000;
+}
+
+.calculator {
+	background: var(--calc);
+	box-shadow: 0 0 0.5em rgba(48, 41, 44, 0.8),
+		inset -.1em -.1em .8em rgba(48, 41, 44, 0.8),
+		inset .1em .1em .8em #fff;
+	padding: 1.5em 1em;
+	border-radius: 1em;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.calculator div {
+	padding: .1em;
+}
+
+button {
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 1em;
+	font-size: 1em;
+	width: 2.8em;
+	border: none;
+	color: #fff;
+	height: 2em;
+	margin-bottom: .3em;
+	background: var(--op-btn);
+	transition: .4s;
+}
+
+button:hover {
+	filter: brightness(150%);
+	box-shadow: 0 0 1em #fff;
+}
+
+button:active {
+	filter: brightness(60%);
+}
+
+sup {
+	font-size: .5em;
+}
+
+.num button {
+	background: var(--num-btn);
+	color: #000;
+}
+
+#clear,
+#bcksp {
+	background: var(--c-btn);
+	color: #fff;
+}
+
+#equals {
+	background: var(--equal-btn);
+	color: #000;
+	font-weight: 700;
+}
+
+#result {
+	font-family: 'Roboto Mono', monospace;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: .5em;
+	text-shadow: 0 0 0.5em #fff;
+	color: #fff;
+	text-align: center;
+	border: none;
+	width: 8.6em;
+	height: 1.8em;
+	font-size: 1.5em;
+	margin: 0.2em;
+	margin-bottom: 0.7em;
+}
+
+.history {
+	background: #6b9c8d;
+}
+
+footer a {
+	font-size: .6em;
+}
+
+::-moz-selection {
+	color: #fff;
+	background: transparent;
+}
+
+::selection {
+	color: #fff;
+	background: transparent;
+}
