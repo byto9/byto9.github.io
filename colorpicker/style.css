@@ -98,7 +98,7 @@ a:hover {
     color: #67a0e2;
 }
 
-#opacitytxt {
+#alphatxt {
     color: #e282ff;
 }
 
@@ -186,7 +186,7 @@ a:hover {
     border: 2px solid #67a0e2;
 }
 
-.opacity {
+.alpha {
     background: #e282ff80;
 }
 
@@ -262,7 +262,8 @@ footer {
     background: #ff828f;
 }
 
-#random {
+#random,
+#invert {
     appearance: none;
     background: rgba(192, 192, 192, 0.3);
     backdrop-filter: blur(3px);
@@ -274,7 +275,8 @@ footer {
     transition: .4s;
 }
 
-#random:hover {
+#random:hover,
+#invert:hover {
     background: rgba(255, 255, 255, 0.3);
     border: 2px solid #ddd;
     text-shadow: none;
